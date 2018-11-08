@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/manage/sdk_manage/">SDK测试平台</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">{{ user }}</a></li>
+                    <li><a href="/logout/">退出</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li ><a href="/manage/sdk_manage/">Windows平台</a></li>
+                    <li class="active"><a href="/manage/linsdk_manage/">Linux平台</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="#">Arm-android平台</a></li>
+                    <li><a href="">Arm-Linux平台</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Arm-ios平台</a></li>
+                    <li><a href="">测试工具</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                <h1><span class="label label-primary">Linux平台</span></h1><br>
+
+                <div class="input-group">
+
+                    <span class="input-group-addon">选择接口</span>
+                    <select class="form-control" id="interface">
+                        <option>人脸检测</option>
+                        <option>特征提取</option>
+                        <option>1比1比对</option>
+                        <option>人脸搜索(1:N)</option>
+                        <option>人脸属性</option>
+                        <option>人脸抓拍</option>
+                        <option>人脸跟踪</option>
+                        <option>全部</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon">算法模型</span>
+                    <select class="form-control" id="algversion">
+                        <option>0.10</option>
+                        <option>0.20</option>
+                        <option>0.30</option>
+                        <option>0.40</option>
+                        <option>0.50</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">SDK版本</span>
+                    <select class="form-control" id="sdkversion">
+                        <option>2.0</option>
+                        <option>2.1.2</option>
+                        <option>2.1.5</option>
+                        <option>2.1.7</option>
+                        <option>2.1.9</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="imgfile">上传图像</span>
+                    <input type="file" class="form-control">
+                </div>
+
+                <br>
+                <div style="width: 100%; height: 60px;">
+                    <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
+                        运行测试
+                    </button>
+                </div>
+                <div>
+                    <p class="btn btn-warning">返回结果</p>
+                    <textarea id="result" class="form-control" rows="15" name=textarea></textarea>
+                    <button id="clear_result">清空</button>
+                </div>
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="/static/js/jquery.min.js"></script>
+    <script>
+        $("#clear_result").click(function () {
+            $("#result").val('');
+        });
+        $(document).ready(function () {
+            $("#send").click(function () {
+                let sdk_interface = $("#interface").val();
+                let algversion = $('#algversion').val();
+                let sdkversion = $("#sdkversion").val();
+
+
+                $.post("/manage/sdk_test/", {
+                    "interface": sdk_interface,
+                    "algversion": algversion,
+                    "sdkversion": sdkversion
+                }, function (resp) {
+                    $("#result").val(resp);
+                });
+
+            })
+
+        });
+    </script>
+{% endblock %}

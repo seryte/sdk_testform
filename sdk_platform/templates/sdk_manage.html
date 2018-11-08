@@ -31,7 +31,7 @@
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <li class="active"><a href="#">Windows平台</a></li>
-                    <li><a href="/manage/module_manage/">Linux平台</a></li>
+                    <li><a href="/manage/linsdk_manage/">Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="/interface/case_manage/">Arm-android平台</a></li>
@@ -43,11 +43,12 @@
                 </ul>
             </div>
 
-            {#        {%if type == 'list' %}#}
+
+
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1><span class="label label-primary">Windows平台</span></h1><br>
-
                 <div class="input-group">
+
                     <span class="input-group-addon">选择接口</span>
                     <select class="form-control" id="interface">
                         <option>人脸检测</option>
@@ -81,12 +82,18 @@
                         <option>2.1.9</option>
                     </select>
                 </div>
-
+                <div class="input-group">
+                    <span class="input-group-addon">测试图像</span>
+                    <input type="file" class="form-control" id="file_upload">
+                </div>
 
                 <br>
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
                         运行测试
+                    </button>
+                     <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
+                        上传
                     </button>
                 </div>
                 <div>
@@ -100,7 +107,7 @@
             </div>
 
 
-            {#        {% endif %}#}
+
         </div>
     </div>
     <script src="/static/js/jquery.min.js"></script>
@@ -113,6 +120,7 @@
                 let sdk_interface = $("#interface").val();
                 let algversion = $('#algversion').val();
                 let sdkversion = $("#sdkversion").val();
+
                 $.post("/manage/sdk_test/", {
                     "interface": sdk_interface,
                     "algversion": algversion,
@@ -124,5 +132,21 @@
             })
 
         });
+
+        function FileUpload() {
+            var form_data = new FormData();
+            var file_info =$('#file_upload')[0].files[0];
+            form_data.append('file',file_info);
+
+            $.ajax({
+                url:'/manage/upload/',
+                type:'POST',
+                data: form_data,
+                processData: false,
+                contentType: false,
+                success: function(callback) {
+                    console.log('ok')
+                }
+            });}
     </script>
 {% endblock %}
