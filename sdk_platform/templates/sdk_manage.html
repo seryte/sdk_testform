@@ -47,18 +47,21 @@
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1><span class="label label-primary">Windows平台</span></h1><br>
+                <div class="alert alert-success" id="prompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                    <strong>Well done!</strong> 上传成功!
+                </div>
                 <div class="input-group">
 
                     <span class="input-group-addon">选择接口</span>
                     <select class="form-control" id="interface">
-                        <option>人脸检测</option>
-                        <option>特征提取</option>
-                        <option>1比1比对</option>
-                        <option>人脸搜索(1:N)</option>
-                        <option>人脸属性</option>
-                        <option>人脸抓拍</option>
-                        <option>人脸跟踪</option>
-                        <option>全部</option>
+                        <option name="detect">人脸检测</option>
+                        <option name="extractor">特征提取</option>
+                        <option name="compare">1比1比对</option>
+                        <option name="search">人脸搜索(1:N)</option>
+                        <option name="predictor">人脸属性</option>
+                        <option name="capturer">人脸抓拍</option>
+                        <option name="tracker">人脸跟踪</option>
+                        <option name="all">全部</option>
                     </select>
                 </div>
 
@@ -96,6 +99,13 @@
                         上传
                     </button>
                 </div>
+{#                加载样式#}
+                <div id="loading" class="spinner" style="display: none">
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+                </div>
+
                 <div>
                     <p class="btn btn-warning">返回结果</p>
                     <textarea id="result" class="form-control" rows="15" name=textarea></textarea>
@@ -117,6 +127,9 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
+                $("#loading").show();
+                $("#prompt").hide();
+                $("#result").val('');
                 let sdk_interface = $("#interface").val();
                 let algversion = $('#algversion').val();
                 let sdkversion = $("#sdkversion").val();
@@ -127,13 +140,17 @@
                     "sdkversion": sdkversion
                 }, function (resp) {
                     $("#result").val(resp);
+                    $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
+                    $("#prompt").show();
+                    $("#loading").hide();
                 });
 
-            })
+            });
 
         });
-
-        function FileUpload() {
+            //上传图像
+            function FileUpload() {
+            $("#loading").show();
             var form_data = new FormData();
             var file_info =$('#file_upload')[0].files[0];
             form_data.append('file',file_info);
@@ -145,8 +162,12 @@
                 processData: false,
                 contentType: false,
                 success: function(callback) {
-                    console.log('ok')
+                    console.log('ok');
+                     $("#loading").hide();
+                    $("#prompt").show();
                 }
-            });}
+            });
+        }
+
     </script>
 {% endblock %}
