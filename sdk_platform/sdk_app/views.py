@@ -92,9 +92,9 @@ def sdk_test(request):
                 return HttpResponse(f.read())
         elif interface == "全部":
             modifybat(runbat, "rem call %dir_", "call %dir_")
-            os.system(runbat)
+            os.system(runbat + ">>" + batdir + "all_log.txt")
             modifybat(runbat, "call %dir_", "rem call %dir_")
-            file = os.system("")
+            file = batdir + "all_log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
     return HttpResponse(algversion)

@@ -50,6 +50,9 @@
                 <div class="alert alert-success" id="prompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Well done!</strong> 上传成功!
                 </div>
+                <div class="alert alert-danger" id="imgprompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                    <strong>Oh snap!</strong> 请上传测试图像!
+                </div>
                 <div class="input-group">
 
                     <span class="input-group-addon">选择接口</span>
@@ -94,6 +97,7 @@
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
                         运行测试
+                        <i class="el-icon-loading"></i>
                     </button>
                      <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
                         上传
@@ -127,6 +131,7 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
+                $("#imgprompt").hide();
                 $("#loading").show();
                 $("#prompt").hide();
                 $("#result").val('');
@@ -150,6 +155,12 @@
         });
             //上传图像
             function FileUpload() {
+                $("#prompt").hide();
+                if ($("#file_upload").val() === ""){
+                    $("#imgprompt").show();
+                    return false;
+                }
+            $("#imgprompt").hide();
             $("#loading").show();
             var form_data = new FormData();
             var file_info =$('#file_upload')[0].files[0];
