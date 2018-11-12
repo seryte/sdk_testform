@@ -1,9 +1,8 @@
 import os
-import re
-import subprocess
+import re, subprocess
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-
+from threading import Thread
 
 # Create your views here.
 
@@ -92,11 +91,9 @@ def sdk_test(request):
                 return HttpResponse(f.read())
         elif interface == "全部":
             modifybat(runbat, "rem call %dir_", "call %dir_")
-            os.system(runbat + ">>" + batdir + "all_log.txt")
+            result = subprocess.getoutput(runbat)
             modifybat(runbat, "call %dir_", "rem call %dir_")
-            file = batdir + "all_log.txt"
-            with open(file, "r") as f:
-                return HttpResponse(f.read())
+            return HttpResponse(result)
     return HttpResponse(algversion)
 
 

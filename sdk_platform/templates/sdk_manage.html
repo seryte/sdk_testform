@@ -131,6 +131,14 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
+
+                //点击完运行测试按钮，置灰按钮，不允许重复发送
+                $(this).attr('disabled', true);
+                $("#upload").attr('disabled', true);
+                $(this).attr('title', "请稍后，后台正在处理中");
+                $("#upload").attr('title', "请稍后，后台正在处理中");
+
+
                 $("#imgprompt").hide();
                 $("#loading").show();
                 $("#prompt").hide();
@@ -148,6 +156,12 @@
                     $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
                     $("#prompt").show();
                     $("#loading").hide();
+
+                    //运行结束启用上传和测试按钮
+                    $("#send").attr('disabled', false);
+                    $("#upload").attr('disabled', false);
+                    $("#send").removeAttr("title");
+                    $("#upload").removeAttr("title");
                 });
 
             });
