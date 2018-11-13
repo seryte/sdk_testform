@@ -1,0 +1,3423 @@
+[31m DetectorTest Start...[0m
+ThreadCnt 1, ImagePath E:\\SDK_testplatform\\sdk_platform\\upload\\, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\detector_result, FileLoopCnt 1
+Thread 0, ImageId 0, Size 1920 * 1080, File E:\\SDK_testplatform\\sdk_platform\\upload\20180423T135617_14847.jpg, tFaceCnt 6
+Thread 0, ImageId 1, Size 1000 * 1000, File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg, tFaceCnt 0
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 2
+Test F:\SDK\Windows\v2.1.2\rc1\output\detector_result Run Done! ThreadCnt 1, TotalTime: 4.046725s, AverageTime: 2.023363s, Capacity: 0.494227, AverageDelay: 2.023352s, MaxDelay: 2.552553s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\detector_result Result - Fail
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+System Date 2018-11-12
+Eagle Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+IFaceRecSDK UnInit...
+[31m ComparerTest Demo Start...[0m
+ThreadCnt 1, ImagePath E:\\SDK_testplatform\\sdk_platform\\upload\\, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\comparer_result, FileLoopCnt 1
+Thread 0, Comparer Create OK!
+[31m File E:\\SDK_testplatform\\sdk_platform\\upload\20180423T135617_14847.jpg, Comparer Thread 0, FaceCompare Error 0x20![0m
+[31m File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg, Comparer Thread 0, FaceCompare Error 0x20![0m
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 2
+Test F:\SDK\Windows\v2.1.2\rc1\output\comparer_result Run Done! ThreadCnt 1, TotalTime: 0.086549s, AverageTime: 0.043275s, Capacity: 23.108190, AverageDelay: 0.043255s, MaxDelay: 0.070757s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\comparer_result Result - Fail
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+System Date 2018-11-12
+Eagle Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+Gluon Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+Image Data is NULL!
+Image Data is NULL!
+IFaceRecSDK UnInit...
+[31m ExtractorTest Start...[0m
+ThreadCnt 1, ImagePath E:\\SDK_testplatform\\sdk_platform\\upload\\, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\extractor_result, FileLoopCnt 1
+Thread 0, Extractor Create OK!
+Thread 0, ImageId 0, Size 1920 * 1080, File E:\\SDK_testplatform\\sdk_platform\\upload\20180423T135617_14847.jpg
+Thread 0, ImageId 1, Size 1000 * 1000, File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 2
+Test F:\SDK\Windows\v2.1.2\rc1\output\extractor_result Run Done! ThreadCnt 1, TotalTime: 1.475507s, AverageTime: 0.737753s, Capacity: 1.355466, AverageDelay: 0.737745s, MaxDelay: 1.022057s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\extractor_result Result - Fail
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+System Date 2018-11-12
+Gluon Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+IFaceRecSDK UnInit...
+[31m SearcherTest Demo Start...[0m
+ThreadCnt 1, ImagePath E:\\SDK_testplatform\\sdk_platform\\upload\\, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\searcher_result, FileLoopCnt 1
+Thread 0, Searcher Create OK!\nSearcher Thread 0, ImageId 0, Size 1920 * 1080, File E:\\SDK_testplatform\\sdk_platform\\upload\20180423T135617_14847.jpg
+Searcher Thread 0, ImageId 1, Size 1000 * 1000, File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg
+[31m File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg, Searcher Thread 0, Face Searcher Error! 0x23[0m
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 2
+Test F:\SDK\Windows\v2.1.2\rc1\output\searcher_result Run Done! ThreadCnt 1, TotalTime: 11.855229s, AverageTime: 5.927614s, Capacity: 0.168702, AverageDelay: 5.927609s, MaxDelay: 10.465431s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\searcher_result Result - Fail
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+Eagle Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+System Date 2018-11-12
+Gluon Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+Opened database successfully
+SQL error: table FACES already exists
+Search Error: No Face Detected!
+IFaceRecSDK UnInit...
+[31m PredictorTest Start...[0m
+ThreadCnt 1, ImagePath E:\\SDK_testplatform\\sdk_platform\\upload\\, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\predictor_result, FileLoopCnt 1
+Thread 0, ImageId 0, Size 1920 * 1080, File E:\\SDK_testplatform\\sdk_platform\\upload\20180423T135617_14847.jpg
+Thread 0, ImageId 1, Size 1000 * 1000, File E:\\SDK_testplatform\\sdk_platform\\upload\30.jpg
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 2
+Test F:\SDK\Windows\v2.1.2\rc1\output\predictor_result Run Done! ThreadCnt 1, TotalTime: 0.689018s, AverageTime: 0.344509s, Capacity: 2.902680, AverageDelay: 0.344645s, MaxDelay: 0.451277s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\predictor_result Result - Fail
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+System Date 2018-11-12
+Attribute Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "MinSize":16}
+IFaceRecSDK UnInit...
+Init Cfg: {"ModelPath":"F://SDK//Windows//v2.1.2//rc1//model", "LicensePath":"F://SDK//Windows//v2.1.2//rc1//license"}
+get DeviceInfo Exception : No such node (DeviceInfo)
+Model: F://SDK//Windows//v2.1.2//rc1//model, License: F://SDK//Windows//v2.1.2//rc1//license, acDeviceInfo=
+License Check OK!
+IFaceRecSDK Init OK! LicensePath F://SDK//Windows//v2.1.2//rc1//license
+CipherLicense Check thread running...
+License ValidDate 2099-12-12
+System Date 2018-11-12
+Eagle Cfg: {"ThreadNum":4}
+SingleObjTrackLoop, handle: 000000005A6C5A76, thread_idx: 1
+SingleObjTrackLoop, handle: 000000005A6C5A76, thread_idx: 0
+SingleObjTrackLoop, handle: 000000005A6C5A76, thread_idx: 3
+UpdateTrackObjsLoop, handle: 000000005A6C5A76, thread begin
+SingleObjTrackLoop, handle: 000000005A6C5A76, thread_idx: 2
+handle: 000000005A6C5A76, track_id:1, frame:0, added reason: appear
+handle: 000000005A6C5A76, track_id:2, frame:0, added reason: appear
+handle: 000000005A6C5A76, track_id:3, frame:0, added reason: appear
+enter slk Process start
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164262784 -164262784]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164262784 -164262784]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164262784 -164262784]
+MatrixPredict [365 165 438 238 ]
+enter slk Process succeed.[365 165 438 238] 
+MatrixPredict [218 334 286 402 ]
+MatrixPredict [33 63 103 133 ]
+enter slk Process succeed.[218 334 286 402] 
+enter slk Process succeed.[33 63 103 133] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 218, top: 334, right: 286, bottom: 402
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 365, top: 165, right: 438, bottom: 238
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 33, top: 63, right: 103, bottom: 133
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+MatrixPredict [215 334 281 400 ]
+enter slk Process succeed.[215 334 281 400] 
+MatrixPredict [27 61 103 137 ]
+MatrixPredict [366 173 436 243 ]
+enter slk Process succeed.[366 173 436 243] 
+enter slk Process succeed.[27 61 103 137] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 215, top: 334, right: 281, bottom: 400
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 366, top: 173, right: 436, bottom: 243
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 27, top: 61, right: 103, bottom: 137
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+MatrixPredict [362 178 432 248 ]
+MatrixPredict [25 59 105 139 ]
+MatrixPredict [205 330 279 404 ]
+enter slk Process succeed.[362 178 432 248] 
+enter slk Process succeed.[25 59 105 139] 
+enter slk Process succeed.[205 330 279 404] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 205, top: 330, right: 279, bottom: 404
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 362, top: 178, right: 432, bottom: 248
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 25, top: 59, right: 105, bottom: 139
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009152 -169009152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009152 -169009152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009152 -169009152]
+MatrixPredict [359 184 430 255 ]
+MatrixPredict [21 59 100 138 ]
+MatrixPredict [198 330 275 407 ]
+enter slk Process succeed.[359 184 430 255] 
+enter slk Process succeed.[21 59 100 138] 
+enter slk Process succeed.[198 330 275 407] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 198, top: 330, right: 275, bottom: 407
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 359, top: 184, right: 430, bottom: 255
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 21, top: 59, right: 100, bottom: 138
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169429104 -169429104]
+MatrixPredict [22 63 99 140 ]
+MatrixPredict [353 189 432 268 ]
+enter slk Process succeed.[353 189 432 268] 
+MatrixPredict [199 339 268 408 ]
+enter slk Process succeed.[22 63 99 140] 
+enter slk Process succeed.[199 339 268 408] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 199, top: 339, right: 268, bottom: 408
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 353, top: 189, right: 432, bottom: 268
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 22, top: 63, right: 99, bottom: 140
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009552 -169009552]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009552 -169009552]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009552 -169009552]
+MatrixPredict [355 193 425 263 ]
+enter slk Process succeed.[355 193 425 263] 
+MatrixPredict [21 60 97 136 ]
+enter slk Process succeed.[21 60 97 136] 
+MatrixPredict [192 330 273 411 ]
+enter slk Process succeed.[192 330 273 411] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 192, top: 330, right: 273, bottom: 411
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 355, top: 193, right: 425, bottom: 263
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 21, top: 60, right: 97, bottom: 136
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:3, frame:0, timeout:1, decaded
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169009552 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+MatrixPredict [348 186 424 262 ]
+MatrixPredict [16 61 90 135 ]
+MatrixPredict [190 329 273 412 ]
+enter slk Process succeed.[348 186 424 262] 
+enter slk Process succeed.[16 61 90 135] 
+enter slk Process succeed.[190 329 273 412] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 190, top: 329, right: 273, bottom: 412
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 348, top: 186, right: 424, bottom: 262
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 16, top: 61, right: 90, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:3, frame:0, timeout:2, decaded
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -169013296]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169013296 -169013296]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169013296 -169013296]
+MatrixPredict [190 326 275 411 ]
+MatrixPredict [347 180 421 254 ]
+MatrixPredict [14 60 89 135 ]
+enter slk Process succeed.[347 180 421 254] 
+enter slk Process succeed.[190 326 275 411] 
+enter slk Process succeed.[14 60 89 135] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 190, top: 326, right: 275, bottom: 411
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 180, right: 421, bottom: 254
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 14, top: 60, right: 89, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:3, frame:0, timeout:3, decaded
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169013296 -163655744]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [192 323 278 409 ]
+MatrixPredict [11 59 89 137 ]
+MatrixPredict [344 168 425 249 ]
+enter slk Process succeed.[11 59 89 137] 
+enter slk Process succeed.[192 323 278 409] 
+enter slk Process succeed.[344 168 425 249] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 192, top: 323, right: 278, bottom: 409
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 344, top: 168, right: 425, bottom: 249
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 11, top: 59, right: 89, bottom: 137
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:3, frame:0, timeout:4, decaded
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -165231808]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165231808 -165231808]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165231808 -165231808]
+MatrixPredict [5 56 82 133 ]
+enter slk Process succeed.[5 56 82 133] 
+MatrixPredict [342 160 421 239 ]
+enter slk Process succeed.[342 160 421 239] 
+MatrixPredict [192 320 279 407 ]
+enter slk Process succeed.[192 320 279 407] 
+handle: 000000005A6C5A76, track_id: 3, frame: 0, left: 192, top: 320, right: 279, bottom: 407
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 342, top: 160, right: 421, bottom: 239
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 5, top: 56, right: 82, bottom: 133
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:3, frame:0, timeout:5, delect reason: no detect2
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [339 159 415 235 ]
+MatrixPredict [0 60 78 139 ]
+enter slk Process succeed.[0 60 78 139] 
+enter slk Process succeed.[339 159 415 235] 
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 339, top: 159, right: 415, bottom: 235
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 60, right: 78, bottom: 139
+Capture Frame 0, FaceCnt 2, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+MatrixPredict [0 54 71 132 ]
+enter slk Process succeed.[0 54 71 132] 
+MatrixPredict [341 161 415 235 ]
+enter slk Process succeed.[341 161 415 235] 
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 341, top: 161, right: 415, bottom: 235
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 54, right: 71, bottom: 132
+Capture Frame 0, FaceCnt 2, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [333 157 415 239 ]
+enter slk Process succeed.[333 157 415 239] 
+MatrixPredict [0 57 72 135 ]
+enter slk Process succeed.[0 57 72 135] 
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 333, top: 157, right: 415, bottom: 239
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 57, right: 72, bottom: 135
+Capture Frame 0, FaceCnt 2, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+MatrixPredict [332 156 415 239 ]
+MatrixPredict [0 49 73 139 ]
+enter slk Process succeed.[332 156 415 239] 
+enter slk Process succeed.[0 49 73 139] 
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 332, top: 156, right: 415, bottom: 239
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 49, right: 73, bottom: 139
+Capture Frame 0, FaceCnt 2, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+handle: 000000005A6C5A76, track_id:4, frame:0, added reason: appear
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [337 158 414 235 ]
+enter slk Process succeed.[337 158 414 235] 
+MatrixPredict [0 46 73 138 ]
+MatrixPredict [197 313 282 398 ]
+enter slk Process succeed.[0 46 73 138] 
+enter slk Process succeed.[197 313 282 398] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 197, top: 313, right: 282, bottom: 398
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 337, top: 158, right: 414, bottom: 235
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 46, right: 73, bottom: 138
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-160997344 -160997344]
+MatrixPredict [203 318 280 395 ]
+MatrixPredict [334 154 417 237 ]
+MatrixPredict [0 49 69 135 ]
+enter slk Process succeed.[203 318 280 395] 
+enter slk Process succeed.[0 49 69 135] 
+enter slk Process succeed.[334 154 417 237] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 203, top: 318, right: 280, bottom: 395
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 334, top: 154, right: 417, bottom: 237
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 49, right: 69, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [206 316 284 394 ]
+enter slk Process succeed.[206 316 284 394] 
+MatrixPredict [0 44 67 131 ]
+MatrixPredict [339 157 416 234 ]
+enter slk Process succeed.[339 157 416 234] 
+enter slk Process succeed.[0 44 67 131] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 206, top: 316, right: 284, bottom: 394
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 339, top: 157, right: 416, bottom: 234
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 44, right: 67, bottom: 131
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162820000 -162820000]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162820000 -162820000]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162820000 -162820000]
+MatrixPredict [0 41 61 126 ]
+MatrixPredict [346 160 418 232 ]
+enter slk Process succeed.[0 41 61 126] 
+MatrixPredict [214 323 284 393 ]
+enter slk Process succeed.[346 160 418 232] 
+enter slk Process succeed.[214 323 284 393] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 214, top: 323, right: 284, bottom: 393
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 346, top: 160, right: 418, bottom: 232
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 41, right: 61, bottom: 126
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162405248 -162405248]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162405248 -162405248]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162405248 -162405248]
+MatrixPredict [0 44 56 123 ]
+MatrixPredict [341 154 420 233 ]
+MatrixPredict [216 322 286 392 ]
+enter slk Process succeed.[0 44 56 123] 
+enter slk Process succeed.[341 154 420 233] 
+enter slk Process succeed.[216 322 286 392] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 216, top: 322, right: 286, bottom: 392
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 341, top: 154, right: 420, bottom: 233
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 44, right: 56, bottom: 123
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:1, decaded
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162405248 -163655744]
+MatrixPredict [347 161 419 233 ]
+enter slk Process succeed.[347 161 419 233] 
+MatrixPredict [221 321 292 392 ]
+enter slk Process succeed.[221 321 292 392] 
+MatrixPredict [0 42 56 121 ]
+enter slk Process succeed.[0 42 56 121] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 221, top: 321, right: 292, bottom: 392
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 161, right: 419, bottom: 233
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 42, right: 56, bottom: 121
+[31m CapturerTest Start...[0m
+ThreadCnt 1, ImagePath F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3, FileCnt 200, CasePath F:\SDK\Windows\v2.1.2\rc1\output\capturer_result, FileLoopCnt 1
+Thread 0, ImageId 0, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00000.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00000.bmp.
+Thread 0, ImageId 1, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00001.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00001.bmp.
+Thread 0, ImageId 2, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00002.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00002.bmp.
+Thread 0, ImageId 3, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00003.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00003.bmp.
+Thread 0, ImageId 4, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00004.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00004.bmp.
+Thread 0, ImageId 5, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00005.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00005.bmp.
+Thread 0, ImageId 6, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00006.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00006.bmp.
+Thread 0, ImageId 7, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00007.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00007.bmp.
+Thread 0, ImageId 8, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00008.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00008.bmp.
+Thread 0, ImageId 9, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00009.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00009.bmp.
+Thread 0, ImageId 10, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00010.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00010.bmp.
+Thread 0, ImageId 11, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00011.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00011.bmp.
+Thread 0, ImageId 12, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00012.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00012.bmp.
+Thread 0, ImageId 13, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00013.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00013.bmp.
+Thread 0, ImageId 14, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00014.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00014.bmp.
+Thread 0, ImageId 15, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00015.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00015.bmp.
+Thread 0, ImageId 16, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00016.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00016.bmp.
+Thread 0, ImageId 17, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00017.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00017.bmp.
+Thread 0, ImageId 18, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00018.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00018.bmp.
+Thread 0, ImageId 19, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00019.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rCapture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:2, decaded
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -162407888]
+MatrixPredict [0 41 56 120 ]
+MatrixPredict [224 321 294 391 ]
+MatrixPredict [347 159 424 236 ]
+enter slk Process succeed.[0 41 56 120] 
+enter slk Process succeed.[224 321 294 391] 
+enter slk Process succeed.[347 159 424 236] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 224, top: 321, right: 294, bottom: 391
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 159, right: 424, bottom: 236
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 41, right: 56, bottom: 120
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:3, decaded
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -163655744]
+MatrixPredict [229 320 299 390 ]
+enter slk Process succeed.[229 320 299 390] 
+MatrixPredict [350 161 421 232 ]
+enter slk Process succeed.[350 161 421 232] 
+MatrixPredict [0 42 56 121 ]
+enter slk Process succeed.[0 42 56 121] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 229, top: 320, right: 299, bottom: 390
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 350, top: 161, right: 421, bottom: 232
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 42, right: 56, bottom: 121
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:4, decaded
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -162407888]
+MatrixPredict [231 317 302 388 ]
+enter slk Process succeed.[231 317 302 388] 
+MatrixPredict [347 158 421 232 ]
+enter slk Process succeed.[347 158 421 232] 
+MatrixPredict [0 42 56 121 ]
+enter slk Process succeed.[0 42 56 121] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 231, top: 317, right: 302, bottom: 388
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 158, right: 421, bottom: 232
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 42, right: 56, bottom: 121
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [235 306 308 379 ]
+enter slk Process succeed.[235 306 308 379] 
+MatrixPredict [347 152 424 229 ]
+MatrixPredict [0 39 57 117 ]
+enter slk Process succeed.[0 39 57 117] 
+enter slk Process succeed.[347 152 424 229] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 235, top: 306, right: 308, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 152, right: 424, bottom: 229
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 39, right: 57, bottom: 117
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:1, decaded
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162407888 -162407888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -162407888]
+MatrixPredict [239 310 311 382 ]
+enter slk Process succeed.[239 310 311 382] 
+MatrixPredict [348 154 423 229 ]
+enter slk Process succeed.[348 154 423 229] 
+MatrixPredict [1 42 59 122 ]
+enter slk Process succeed.[1 42 59 122] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 239, top: 310, right: 311, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 348, top: 154, right: 423, bottom: 229
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 1, top: 42, right: 59, bottom: 122
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [347 160 419 232 ]
+enter slk Process succeed.[347 160 419 232] 
+MatrixPredict [240 314 311 385 ]
+MatrixPredict [0 44 56 122 ]
+enter slk Process succeed.[240 314 311 385] 
+enter slk Process succeed.[0 44 56 122] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 240, top: 314, right: 311, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 160, right: 419, bottom: 232
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 44, right: 56, bottom: 122
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [0 45 59 126 ]
+enter slk Process succeed.[0 45 59 126] 
+MatrixPredict [239 313 311 385 ]
+enter slk Process succeed.[239 313 311 385] 
+MatrixPredict [343 162 415 234 ]
+enter slk Process succeed.[343 162 415 234] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 239, top: 313, right: 311, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 343, top: 162, right: 415, bottom: 234
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 45, right: 59, bottom: 126
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [240 311 313 384 ]
+enter slk Process succeed.[240 311 313 384] 
+MatrixPredict [0 47 52 120 ]
+MatrixPredict [337 156 415 234 ]
+enter slk Process succeed.[0 47 52 120] 
+enter slk Process succeed.[337 156 415 234] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 240, top: 311, right: 313, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 337, top: 156, right: 415, bottom: 234
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 47, right: 52, bottom: 120
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162576272 -162576272]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162576272 -162576272]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162576272 -162576272]
+MatrixPredict [246 310 313 377 ]
+enter slk Process succeed.[246 310 313 377] 
+MatrixPredict [0 42 59 128 ]
+enter slk Process succeed.[0 42 59 128] 
+MatrixPredict [335 157 415 237 ]
+enter slk Process succeed.[335 157 415 237] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 246, top: 310, right: 313, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 335, top: 157, right: 415, bottom: 237
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 42, right: 59, bottom: 128
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [332 160 403 231 ]
+enter slk Process succeed.[332 160 403 231] 
+MatrixPredict [0 44 60 128 ]
+enter slk Process succeed.[0 44 60 128] 
+MatrixPredict [243 308 313 378 ]
+enter slk Process succeed.[243 308 313 378] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 243, top: 308, right: 313, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 332, top: 160, right: 403, bottom: 231
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 44, right: 60, bottom: 128
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [324 158 407 241 ]
+MatrixPredict [243 308 315 380 ]
+MatrixPredict [0 48 58 128 ]
+enter slk Process succeed.[243 308 315 380] 
+enter slk Process succeed.[0 48 58 128] 
+enter slk Process succeed.[324 158 407 241] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 243, top: 308, right: 315, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 324, top: 158, right: 407, bottom: 241
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 48, right: 58, bottom: 128
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [0 51 57 130 ]
+MatrixPredict [324 159 402 237 ]
+enter slk Process succeed.[0 51 57 130] 
+MatrixPredict [244 308 316 380 ]
+enter slk Process succeed.[324 159 402 237] 
+enter slk Process succeed.[244 308 316 380] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 244, top: 308, right: 316, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 324, top: 159, right: 402, bottom: 237
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 51, right: 57, bottom: 130
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [245 308 314 377 ]
+enter slk Process succeed.[245 308 314 377] 
+MatrixPredict [0 52 57 132 ]
+enter slk Process succeed.[0 52 57 132] 
+MatrixPredict [320 162 399 241 ]
+enter slk Process succeed.[320 162 399 241] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 245, top: 308, right: 314, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 320, top: 162, right: 399, bottom: 241
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 52, right: 57, bottom: 132
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [246 304 316 374 ]
+enter slk Process succeed.[246 304 316 374] 
+MatrixPredict [0 51 60 135 ]
+MatrixPredict [321 164 396 239 ]
+enter slk Process succeed.[0 51 60 135] 
+enter slk Process succeed.[321 164 396 239] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 246, top: 304, right: 316, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 321, top: 164, right: 396, bottom: 239
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 51, right: 60, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163655744 -163655744]
+MatrixPredict [248 303 319 374 ]
+enter slk Process succeed.[248 303 319 374] 
+MatrixPredict [0 55 59 138 ]
+MatrixPredict [319 163 392 236 ]
+enter slk Process succeed.[0 55 59 138] 
+enter slk Process succeed.[319 163 392 236] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 248, top: 303, right: 319, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 319, top: 163, right: 392, bottom: 236
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 55, right: 59, bottom: 138
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [0 58 52 134 ]
+MatrixPredict [318 165 394 241 ]
+MatrixPredict [254 303 323 372 ]
+enter slk Process succeed.[0 58 52 134] 
+enter slk Process succeed.[254 303 323 372] 
+enter slk Process succeed.[318 165 394 241] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 254, top: 303, right: 323, bottom: 372
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 318, top: 165, right: 394, bottom: 241
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 58, right: 52, bottom: 134
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60009296 -60009296]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60009296 -60009296]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60009296 -60009296]
+MatrixPredict [0 53 59 135 ]
+enter slk Process succeed.[0 53 59 135] 
+MatrixPredict [259 299 329 369 ]
+MatrixPredict [316 159 398 241 ]
+enter slk Process succeed.[259 299 329 369] 
+enter slk Process succeed.[316 159 398 241] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 259, top: 299, right: 329, bottom: 369
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 316, top: 159, right: 398, bottom: 241
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 53, right: 59, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+MatrixPredict [265 300 334 369 ]
+enter slk Process succeed.[265 300 334 369] 
+MatrixPredict [315 160 391 236 ]
+MatrixPredict [0 53 55 129 ]
+enter slk Process succeed.[315 160 391 236] 
+enter slk Process succeed.[0 53 55 129] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 265, top: 300, right: 334, bottom: 369
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 315, top: 160, right: 391, bottom: 236
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 53, right: 55, bottom: 129
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [269 299 340 370 ]
+MatrixPredict [0 52 52 127 ]
+enter slk Process succeed.[269 299 340 370] 
+enter slk Process succeed.[0 52 52 127] 
+MatrixPredict [316 159 393 236 ]
+enter slk Process succeed.[316 159 393 236] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 269, top: 299, right: 340, bottom: 370
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 316, top: 159, right: 393, bottom: 236
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 52, right: 52, bottom: 127
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [317 159 395 237 ]
+MatrixPredict [277 302 344 369 ]
+MatrixPredict [0 52 61 134 ]
+enter slk Process succeed.[277 302 344 369] 
+enter slk Process succeed.[0 52 61 134] 
+enter slk Process succeed.[317 159 395 237] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 277, top: 302, right: 344, bottom: 369
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 317, top: 159, right: 395, bottom: 237
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 52, right: 61, bottom: 134
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+MatrixPredict [0 53 68 141 ]
+MatrixPredict [282 302 352 372 ]
+MatrixPredict [316 158 394 236 ]
+enter slk Process succeed.[282 302 352 372] 
+enter slk Process succeed.[0 53 68 141] 
+enter slk Process succeed.[316 158 394 236] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 282, top: 302, right: 352, bottom: 372
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 316, top: 158, right: 394, bottom: 236
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 53, right: 68, bottom: 141
+c1\output\capturer_result/00019.bmp.
+Thread 0, ImageId 20, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00020.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00020.bmp.
+Thread 0, ImageId 21, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00021.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00021.bmp.
+Thread 0, ImageId 22, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00022.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00022.bmp.
+Thread 0, ImageId 23, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00023.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00023.bmp.
+Thread 0, ImageId 24, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00024.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00024.bmp.
+Thread 0, ImageId 25, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00025.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00025.bmp.
+Thread 0, ImageId 26, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00026.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00026.bmp.
+Thread 0, ImageId 27, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00027.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00027.bmp.
+Thread 0, ImageId 28, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00028.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00028.bmp.
+Thread 0, ImageId 29, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00029.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00029.bmp.
+Thread 0, ImageId 30, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00030.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00030.bmp.
+Thread 0, ImageId 31, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00031.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00031.bmp.
+Thread 0, ImageId 32, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00032.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00032.bmp.
+Thread 0, ImageId 33, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00033.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00033.bmp.
+Thread 0, ImageId 34, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00034.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00034.bmp.
+Thread 0, ImageId 35, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00035.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00035.bmp.
+Thread 0, ImageId 36, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00036.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00036.bmp.
+Thread 0, ImageId 37, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00037.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00037.bmp.
+Thread 0, ImageId 38, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00038.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00038.bmp.
+Thread 0, ImageId 39, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00039.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00039.bmp.
+Thread 0, ImageId 40, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00040.bmp
+ResulCapture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59270528 -59270528]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59270528 -59270528]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59270528 -59270528]
+MatrixPredict [288 301 361 374 ]
+MatrixPredict [315 154 395 234 ]
+MatrixPredict [0 58 64 136 ]
+enter slk Process succeed.[288 301 361 374] 
+enter slk Process succeed.[0 58 64 136] 
+enter slk Process succeed.[315 154 395 234] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 288, top: 301, right: 361, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 315, top: 154, right: 395, bottom: 234
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 58, right: 64, bottom: 136
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [0 54 69 142 ]
+MatrixPredict [323 159 394 230 ]
+enter slk Process succeed.[0 54 69 142] 
+enter slk Process succeed.[323 159 394 230] 
+MatrixPredict [288 294 368 374 ]
+enter slk Process succeed.[288 294 368 374] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 288, top: 294, right: 368, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 323, top: 159, right: 394, bottom: 230
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 54, right: 69, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+MatrixPredict [322 151 396 225 ]
+MatrixPredict [298 298 371 371 ]
+enter slk Process succeed.[322 151 396 225] 
+MatrixPredict [0 54 69 142 ]
+enter slk Process succeed.[298 298 371 371] 
+enter slk Process succeed.[0 54 69 142] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 298, top: 298, right: 371, bottom: 371
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 322, top: 151, right: 396, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 54, right: 69, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162601296 -162601296]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162601296 -162601296]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162601296 -162601296]
+MatrixPredict [0 56 68 140 ]
+enter slk Process succeed.[0 56 68 140] 
+MatrixPredict [298 291 383 376 ]
+MatrixPredict [327 151 400 224 ]
+enter slk Process succeed.[327 151 400 224] 
+enter slk Process succeed.[298 291 383 376] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 298, top: 291, right: 383, bottom: 376
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 327, top: 151, right: 400, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 56, right: 68, bottom: 140
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [304 299 380 375 ]
+enter slk Process succeed.[304 299 380 375] 
+MatrixPredict [0 53 75 148 ]
+MatrixPredict [329 151 401 223 ]
+enter slk Process succeed.[329 151 401 223] 
+enter slk Process succeed.[0 53 75 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 304, top: 299, right: 380, bottom: 375
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 329, top: 151, right: 401, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 53, right: 75, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [309 303 383 377 ]
+MatrixPredict [0 57 71 142 ]
+MatrixPredict [329 147 405 223 ]
+enter slk Process succeed.[309 303 383 377] 
+enter slk Process succeed.[329 147 405 223] 
+enter slk Process succeed.[0 57 71 142] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 309, top: 303, right: 383, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 329, top: 147, right: 405, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 57, right: 71, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169133120 -169133120]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169133120 -169133120]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169133120 -169133120]
+MatrixPredict [0 64 68 138 ]
+enter slk Process succeed.[0 64 68 138] 
+MatrixPredict [336 152 409 225 ]
+enter slk Process succeed.[336 152 409 225] 
+MatrixPredict [307 302 393 388 ]
+enter slk Process succeed.[307 302 393 388] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 307, top: 302, right: 393, bottom: 388
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 336, top: 152, right: 409, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 64, right: 68, bottom: 138
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+MatrixPredict [310 303 393 386 ]
+enter slk Process succeed.[310 303 393 386] 
+MatrixPredict [0 65 70 141 ]
+MatrixPredict [339 153 413 227 ]
+enter slk Process succeed.[0 65 70 141] 
+enter slk Process succeed.[339 153 413 227] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 310, top: 303, right: 393, bottom: 386
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 339, top: 153, right: 413, bottom: 227
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 65, right: 70, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167689216 -167689216]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167689216 -167689216]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167689216 -167689216]
+MatrixPredict [311 305 390 384 ]
+enter slk Process succeed.[311 305 390 384] 
+MatrixPredict [339 148 416 225 ]
+enter slk Process succeed.[339 148 416 225] 
+MatrixPredict [0 67 69 138 ]
+enter slk Process succeed.[0 67 69 138] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 311, top: 305, right: 390, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 339, top: 148, right: 416, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 0, top: 67, right: 69, bottom: 138
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+MatrixPredict [305 298 391 384 ]
+MatrixPredict [345 143 418 216 ]
+enter slk Process succeed.[305 298 391 384] 
+enter slk Process succeed.[345 143 418 216] 
+MatrixPredict [4 67 72 135 ]
+enter slk Process succeed.[4 67 72 135] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 305, top: 298, right: 391, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 345, top: 143, right: 418, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 4, top: 67, right: 72, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60119888 -60119888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60119888 -60119888]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60119888 -60119888]
+MatrixPredict [347 143 422 218 ]
+MatrixPredict [12 73 78 139 ]
+MatrixPredict [304 303 383 382 ]
+enter slk Process succeed.[347 143 422 218] 
+enter slk Process succeed.[12 73 78 139] 
+enter slk Process succeed.[304 303 383 382] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 304, top: 303, right: 383, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 347, top: 143, right: 422, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 12, top: 73, right: 78, bottom: 139
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167711104 -167711104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167711104 -167711104]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167711104 -167711104]
+MatrixPredict [354 145 424 215 ]
+MatrixPredict [7 72 84 149 ]
+MatrixPredict [298 308 372 382 ]
+enter slk Process succeed.[354 145 424 215] 
+enter slk Process succeed.[7 72 84 149] 
+enter slk Process succeed.[298 308 372 382] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 298, top: 308, right: 372, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 354, top: 145, right: 424, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 7, top: 72, right: 84, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [357 146 433 222 ]
+MatrixPredict [293 309 365 381 ]
+enter slk Process succeed.[357 146 433 222] 
+MatrixPredict [5 68 95 158 ]
+enter slk Process succeed.[293 309 365 381] 
+enter slk Process succeed.[5 68 95 158] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 293, top: 309, right: 365, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 357, top: 146, right: 433, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 5, top: 68, right: 95, bottom: 158
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [364 150 433 219 ]
+MatrixPredict [284 306 359 381 ]
+MatrixPredict [20 81 90 151 ]
+enter slk Process succeed.[364 150 433 219] 
+enter slk Process succeed.[20 81 90 151] 
+enter slk Process succeed.[284 306 359 381] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 284, top: 306, right: 359, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 364, top: 150, right: 433, bottom: 219
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 20, top: 81, right: 90, bottom: 151
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+MatrixPredict [366 145 436 215 ]
+MatrixPredict [21 80 93 152 ]
+enter slk Process succeed.[21 80 93 152] 
+enter slk Process succeed.[366 145 436 215] 
+MatrixPredict [277 307 348 378 ]
+enter slk Process succeed.[277 307 348 378] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 277, top: 307, right: 348, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 366, top: 145, right: 436, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 21, top: 80, right: 93, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+MatrixPredict [26 83 95 152 ]
+MatrixPredict [269 310 338 379 ]
+MatrixPredict [369 141 444 216 ]
+enter slk Process succeed.[26 83 95 152] 
+enter slk Process succeed.[269 310 338 379] 
+enter slk Process succeed.[369 141 444 216] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 269, top: 310, right: 338, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 369, top: 141, right: 444, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 26, top: 83, right: 95, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+MatrixPredict [264 308 336 380 ]
+enter slk Process succeed.[264 308 336 380] 
+MatrixPredict [373 141 448 216 ]
+MatrixPredict [29 84 97 152 ]
+enter slk Process succeed.[373 141 448 216] 
+enter slk Process succeed.[29 84 97 152] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 264, top: 308, right: 336, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 373, top: 141, right: 448, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 29, top: 84, right: 97, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+MatrixPredict [380 144 453 217 ]
+MatrixPredict [258 306 339 387 ]
+MatrixPredict [31 84 101 154 ]
+enter slk Process succeed.[380 144 453 217] 
+enter slk Process succeed.[31 84 101 154] 
+enter slk Process succeed.[258 306 339 387] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 258, top: 306, right: 339, bottom: 387
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 380, top: 144, right: 453, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 31, top: 84, right: 101, bottom: 154
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+MatrixPredict [255 303 340 388 ]
+MatrixPredict [31 82 105 156 ]
+enter slk Process succeed.[255 303 340 388] 
+MatrixPredict [380 145 453 218 ]
+enter slk Process succeed.[31 82 105 156] 
+enter slk Process succeed.[380 145 453 218] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 255, top: 303, right: 340, bottom: 388
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 380, top: 145, right: 453, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 31, top: 82, right: 105, bottom: 156
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+MatrixPredict [38 83 106 151 ]
+enter slk Process succeed.[38 83 106 151] 
+MatrixPredict [260 307 335 382 ]
+MatrixPredict [385 144 457 216 ]
+enter slk Process succeed.[385 144 457 216] 
+enter slk Process succeed.[260 307 335 382] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 260, top: 307, right: 335, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 385, top: 144, right: 457, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 38, top: 83, right: 106, bottom: 151
+t images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00040.bmp.
+Thread 0, ImageId 41, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00041.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00041.bmp.
+Thread 0, ImageId 42, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00042.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00042.bmp.
+Thread 0, ImageId 43, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00043.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00043.bmp.
+Thread 0, ImageId 44, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00044.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00044.bmp.
+Thread 0, ImageId 45, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00045.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00045.bmp.
+Thread 0, ImageId 46, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00046.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00046.bmp.
+Thread 0, ImageId 47, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00047.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00047.bmp.
+Thread 0, ImageId 48, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00048.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00048.bmp.
+Thread 0, ImageId 49, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00049.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00049.bmp.
+Thread 0, ImageId 50, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00050.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00050.bmp.
+Thread 0, ImageId 51, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00051.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00051.bmp.
+Thread 0, ImageId 52, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00052.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00052.bmp.
+Thread 0, ImageId 53, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00053.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00053.bmp.
+Thread 0, ImageId 54, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00054.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00054.bmp.
+Thread 0, ImageId 55, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00055.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00055.bmp.
+Thread 0, ImageId 56, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00056.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00056.bmp.
+Thread 0, ImageId 57, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00057.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00057.bmp.
+Thread 0, ImageId 58, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00058.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00058.bmp.
+Thread 0, ImageId 59, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00059.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00059.bmp.
+Thread 0, ImageId 60, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00060.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00060.bmp.
+Thread 0, ImageId 61, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\bencCapture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+MatrixPredict [264 308 337 381 ]
+enter slk Process succeed.[264 308 337 381] 
+MatrixPredict [391 145 460 214 ]
+MatrixPredict [39 83 113 157 ]
+enter slk Process succeed.[391 145 460 214] 
+enter slk Process succeed.[39 83 113 157] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 264, top: 308, right: 337, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 391, top: 145, right: 460, bottom: 214
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 39, top: 83, right: 113, bottom: 157
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163405424 -163405424]
+MatrixPredict [384 143 457 216 ]
+enter slk Process succeed.[384 143 457 216] 
+MatrixPredict [32 78 110 156 ]
+MatrixPredict [264 305 342 383 ]
+enter slk Process succeed.[264 305 342 383] 
+enter slk Process succeed.[32 78 110 156] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 264, top: 305, right: 342, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 384, top: 143, right: 457, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 32, top: 78, right: 110, bottom: 156
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+MatrixPredict [50 84 115 149 ]
+MatrixPredict [275 310 339 374 ]
+MatrixPredict [390 143 461 214 ]
+enter slk Process succeed.[275 310 339 374] 
+enter slk Process succeed.[50 84 115 149] 
+enter slk Process succeed.[390 143 461 214] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 275, top: 310, right: 339, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 390, top: 143, right: 461, bottom: 214
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 50, top: 84, right: 115, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+MatrixPredict [276 303 350 377 ]
+enter slk Process succeed.[276 303 350 377] 
+MatrixPredict [51 82 121 152 ]
+enter slk Process succeed.[51 82 121 152] 
+MatrixPredict [391 146 463 218 ]
+enter slk Process succeed.[391 146 463 218] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 276, top: 303, right: 350, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 391, top: 146, right: 463, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 51, top: 82, right: 121, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+MatrixPredict [284 305 353 374 ]
+enter slk Process succeed.[284 305 353 374] 
+MatrixPredict [391 146 461 216 ]
+MatrixPredict [57 83 121 147 ]
+enter slk Process succeed.[391 146 461 216] 
+enter slk Process succeed.[57 83 121 147] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 284, top: 305, right: 353, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 391, top: 146, right: 461, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 57, top: 83, right: 121, bottom: 147
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+MatrixPredict [398 150 464 216 ]
+MatrixPredict [293 306 363 376 ]
+MatrixPredict [65 85 130 150 ]
+enter slk Process succeed.[398 150 464 216] 
+enter slk Process succeed.[293 306 363 376] 
+enter slk Process succeed.[65 85 130 150] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 293, top: 306, right: 363, bottom: 376
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 398, top: 150, right: 464, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 65, top: 85, right: 130, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, timeout:1, decaded
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -162902416]
+MatrixPredict [70 86 134 150 ]
+MatrixPredict [398 150 465 217 ]
+MatrixPredict [299 306 370 377 ]
+enter slk Process succeed.[70 86 134 150] 
+enter slk Process succeed.[398 150 465 217] 
+enter slk Process succeed.[299 306 370 377] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 299, top: 306, right: 370, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 398, top: 150, right: 465, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 70, top: 86, right: 134, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+handle: 000000005A6C5A76, track_id:5, frame:0, added reason: appear
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+MatrixPredict [397 149 470 222 ]
+MatrixPredict [71 83 138 150 ]
+enter slk Process succeed.[71 83 138 150] 
+MatrixPredict [305 306 380 381 ]
+MatrixPredict [5 80 87 162 ]
+enter slk Process succeed.[397 149 470 222] 
+enter slk Process succeed.[305 306 380 381] 
+enter slk Process succeed.[5 80 87 162] 
+handle: 000000005A6C5A76, track_id: 5, frame: 0, left: 5, top: 80, right: 87, bottom: 162
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 305, top: 306, right: 380, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 397, top: 149, right: 470, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 71, top: 83, right: 138, bottom: 150
+Capture Frame 0, FaceCnt 4, IsDetect 1, DetectCnt 4
+handle: 000000005A6C5A76, track_id:5, frame:0, timeout:1, decaded
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -162902416]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -162902416]
+MatrixPredict [398 147 472 221 ]
+MatrixPredict [9 79 93 163 ]
+enter slk Process succeed.[398 147 472 221] 
+MatrixPredict [58 72 144 158 ]
+MatrixPredict [312 308 380 376 ]
+enter slk Process succeed.[312 308 380 376] 
+enter slk Process succeed.[9 79 93 163] 
+enter slk Process succeed.[58 72 144 158] 
+handle: 000000005A6C5A76, track_id: 5, frame: 0, left: 9, top: 79, right: 93, bottom: 163
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 312, top: 308, right: 380, bottom: 376
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 398, top: 147, right: 472, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 58, top: 72, right: 144, bottom: 158
+Capture Frame 0, FaceCnt 4, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:5, frame:0, timeout:2, decaded
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162902416 -169135184]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -169135184]
+MatrixPredict [321 307 393 379 ]
+enter slk Process succeed.[321 307 393 379] 
+MatrixPredict [14 78 100 164 ]
+MatrixPredict [77 80 150 153 ]
+MatrixPredict [402 149 471 218 ]
+enter slk Process succeed.[77 80 150 153] 
+enter slk Process succeed.[14 78 100 164] 
+enter slk Process succeed.[402 149 471 218] 
+handle: 000000005A6C5A76, track_id: 5, frame: 0, left: 14, top: 78, right: 100, bottom: 164
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 321, top: 307, right: 393, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 402, top: 149, right: 471, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 77, top: 80, right: 150, bottom: 153
+Capture Frame 0, FaceCnt 4, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:5, frame:0, timeout:3, decaded
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169135184 -165174944]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+MatrixPredict [408 152 475 219 ]
+MatrixPredict [82 77 160 155 ]
+enter slk Process succeed.[408 152 475 219] 
+enter slk Process succeed.[82 77 160 155] 
+MatrixPredict [331 310 402 381 ]
+enter slk Process succeed.[331 310 402 381] 
+MatrixPredict [20 77 108 165 ]
+enter slk Process succeed.[20 77 108 165] 
+handle: 000000005A6C5A76, track_id: 5, frame: 0, left: 20, top: 77, right: 108, bottom: 165
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 331, top: 310, right: 402, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 408, top: 152, right: 475, bottom: 219
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 82, top: 77, right: 160, bottom: 155
+Capture Frame 0, FaceCnt 4, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:5, frame:0, timeout:4, decaded
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [408 146 485 223 ]
+MatrixPredict [339 310 410 381 ]
+enter slk Process succeed.[408 146 485 223] 
+MatrixPredict [95 80 160 145 ]
+enter slk Process succeed.[339 310 410 381] 
+enter slk Process succeed.[95 80 160 145] 
+MatrixPredict [25 76 115 166 ]
+enter slk Process succeed.[25 76 115 166] 
+handle: 000000005A6C5A76, track_id: 5, frame: 0, left: 25, top: 76, right: 115, bottom: 166
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 339, top: 310, right: 410, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 408, top: 146, right: 485, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 95, top: 80, right: 160, bottom: 145
+Capture Frame 0, FaceCnt 4, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:5, frame:0, timeout:5, delect reason: no detect2
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165174944 -165174944]
+MatrixPredict [98 78 175 155 ]
+MatrixPredict [411 146 487 222 ]
+MatrixPredict [352 314 413 375 ]
+enter slk Process succeed.[98 78 175 155] 
+enter slk Process succeed.[411 146 487 222] 
+enter slk Process succeed.[352 314 413 375] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 352, top: 314, right: 413, bottom: 375
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 411, top: 146, right: 487, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 98, top: 78, right: 175, bottom: 155
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [356 312 422 378 ]
+MatrixPredict [413 147 487 221 ]
+enter slk Process succeed.[356 312 422 378] 
+enter slk Process succeed.[413 147 487 221] 
+MatrixPredict [102 75 176 149 ]
+enter slk Process succeed.[102 75 176 149] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 356, top: 312, right: 422, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 413, top: 147, right: 487, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 102, top: 75, right: 176, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60051312 -60051312]
+MatrixPredict [362 310 428 376 ]
+MatrixPredict [415 141 490 216 ]
+enter slk Process succeed.[362 310 428 376] 
+enter slk Process succeed.[415 141 490 216] 
+MatrixPredict [107 76 181 150 ]
+enter slk Process succeed.[107 76 181 150] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 362, top: 310, right: 428, bottom: 376
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 415, top: 141, right: 490, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 107, top: 76, right: 181, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [368 310 432 374 ]
+MatrixPredict [418 138 496 216 ]
+enter slk Process succeed.[368 310 432 374] 
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process succeed.[418 138 496 216] 
+MatrixPredict [114 73 193 152 ]
+enter slk Process succeed.[114 73 193 152] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 368, top: 310, right: 432, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 418, top: 138, right: 496, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 114, top: 73, right: 193, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165176240 -165176240]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165176240 -165176240]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165176240 -165176240]
+MatrixPredict [421 138 499 216 ]
+MatrixPredict [122 78 198 154 ]
+enter slk Process succeed.[122 78 198 154] 
+enter slk Process succeed.[421 138 499 216] 
+MatrixPredict [370 308 445 383 ]
+enter slk Process succeed.[370 308 445 383] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 370, top: 308, right: 445, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 421, top: 138, right: 499, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 122, top: 78, right: 198, bottom: 154
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [375 309 450 384 ]
+MatrixPredict [131 79 208 156 ]
+MatrixPredict [422 141 500 219 ]
+enter slk Process succeed.[375 309 450 384] 
+enter slk Process succeed.[131 79 208 156] 
+enter slk Process succeed.[422 141 500 219] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 375, top: 309, right: 450, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 422, top: 141, right: 500, bottom: 219
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 131, top: 79, right: 208, bottom: 156
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [138 80 207 149 ]
+MatrixPredict [375 308 453 386 ]
+enter slk Process succeed.[138 80 207 149] 
+enter slk Process succeed.[375 308 453 386] 
+MatrixPredict [425 137 503 215 ]
+enter slk Process succeed.[425 137 503 215] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 375, top: 308, right: 453, bottom: 386
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 425, top: 137, right: 503, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 138, top: 80, right: 207, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [147 85 214 152 ]
+enter slk Process succeed.[147 85 214 152] 
+MatrixPredict [380 310 456 386 ]
+enter slk Process succeed.[380 310 456 386] 
+MatrixPredict [431 139 509 217 ]
+enter slk Process succeed.[431 139 509 217] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 380, top: 310, right: 456, bottom: 386
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 431, top: 139, right: 509, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 147, top: 85, right: 214, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [384 311 457 384 ]
+enter slk Process succeed.[384 311 457 384] 
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [430 143 517 230 ]
+enter slk Process succeed.[430 143 517 230] 
+MatrixPredict [146 78 227 159 ]
+enter slk Process succeed.[146 78 227 159] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 384, top: 311, right: 457, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 430, top: 143, right: 517, bottom: 230
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 146, top: 78, right: 227, bottom: 159
+hmark\tracker\data\track3\00061.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00061.bmp.
+Thread 0, ImageId 62, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00062.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00062.bmp.
+Thread 0, ImageId 63, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00063.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00063.bmp.
+Thread 0, ImageId 64, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00064.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00064.bmp.
+Thread 0, ImageId 65, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00065.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00065.bmp.
+Thread 0, ImageId 66, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00066.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00066.bmp.
+Thread 0, ImageId 67, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00067.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00067.bmp.
+Thread 0, ImageId 68, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00068.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00068.bmp.
+Thread 0, ImageId 69, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00069.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00069.bmp.
+Thread 0, ImageId 70, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00070.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00070.bmp.
+Thread 0, ImageId 71, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00071.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00071.bmp.
+Thread 0, ImageId 72, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00072.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00072.bmp.
+Thread 0, ImageId 73, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00073.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00073.bmp.
+Thread 0, ImageId 74, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00074.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00074.bmp.
+Thread 0, ImageId 75, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00075.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00075.bmp.
+Thread 0, ImageId 76, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00076.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00076.bmp.
+Thread 0, ImageId 77, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00077.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00077.bmp.
+Thread 0, ImageId 78, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00078.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00078.bmp.
+Thread 0, ImageId 79, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00079.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00079.bmp.
+Thread 0, ImageId 80, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00080.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00080.bmp.
+Thread 0, ImageId 81, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00081.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00081.bmp.
+Thread 0, ImageId 82, Size 720 * 576,Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [433 136 511 214 ]
+MatrixPredict [384 309 457 382 ]
+enter slk Process succeed.[433 136 511 214] 
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process succeed.[384 309 457 382] 
+MatrixPredict [151 78 227 154 ]
+enter slk Process succeed.[151 78 227 154] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 384, top: 309, right: 457, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 433, top: 136, right: 511, bottom: 214
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 151, top: 78, right: 227, bottom: 154
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59565472 -59565472]
+MatrixPredict [157 78 234 155 ]
+MatrixPredict [388 310 461 383 ]
+MatrixPredict [435 130 523 218 ]
+enter slk Process succeed.[157 78 234 155] 
+enter slk Process succeed.[388 310 461 383] 
+enter slk Process succeed.[435 130 523 218] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 388, top: 310, right: 461, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 435, top: 130, right: 523, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 157, top: 78, right: 234, bottom: 155
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162988688 -162988688]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-162988688 -162988688]
+calcOpticalFlowPyrLK m_mtPrev matCur [-162988688 -162988688]
+MatrixPredict [164 74 237 147 ]
+MatrixPredict [442 136 520 214 ]
+enter slk Process succeed.[164 74 237 147] 
+MatrixPredict [386 306 465 385 ]
+enter slk Process succeed.[442 136 520 214] 
+enter slk Process succeed.[386 306 465 385] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 386, top: 306, right: 465, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 442, top: 136, right: 520, bottom: 214
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 164, top: 74, right: 237, bottom: 147
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [439 140 515 216 ]
+MatrixPredict [165 72 234 141 ]
+enter slk Process succeed.[165 72 234 141] 
+enter slk Process succeed.[439 140 515 216] 
+MatrixPredict [390 310 461 381 ]
+enter slk Process succeed.[390 310 461 381] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 390, top: 310, right: 461, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 439, top: 140, right: 515, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 165, top: 72, right: 234, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59233664 -59233664]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59233664 -59233664]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59233664 -59233664]
+MatrixPredict [450 140 517 207 ]
+MatrixPredict [158 62 245 149 ]
+MatrixPredict [390 308 465 383 ]
+enter slk Process succeed.[450 140 517 207] 
+enter slk Process succeed.[390 308 465 383] 
+enter slk Process succeed.[158 62 245 149] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 390, top: 308, right: 465, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 450, top: 140, right: 517, bottom: 207
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 158, top: 62, right: 245, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163126352 -163126352]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163126352 -163126352]
+calcOpticalFlowPyrLK m_mtPrev matCur [-163126352 -163126352]
+MatrixPredict [448 139 526 217 ]
+enter slk Process succeed.[448 139 526 217] 
+MatrixPredict [168 68 245 145 ]
+MatrixPredict [389 305 468 384 ]
+enter slk Process succeed.[389 305 468 384] 
+enter slk Process succeed.[168 68 245 145] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 389, top: 305, right: 468, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 448, top: 139, right: 526, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 168, top: 68, right: 245, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [171 66 247 142 ]
+enter slk Process succeed.[171 66 247 142] 
+MatrixPredict [388 302 470 384 ]
+MatrixPredict [453 142 527 216 ]
+enter slk Process succeed.[388 302 470 384] 
+enter slk Process succeed.[453 142 527 216] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 388, top: 302, right: 470, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 453, top: 142, right: 527, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 171, top: 66, right: 247, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [455 140 529 214 ]
+MatrixPredict [390 301 471 382 ]
+MatrixPredict [172 62 251 141 ]
+enter slk Process succeed.[455 140 529 214] 
+enter slk Process succeed.[172 62 251 141] 
+enter slk Process succeed.[390 301 471 382] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 390, top: 301, right: 471, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 455, top: 140, right: 529, bottom: 214
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 172, top: 62, right: 251, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [459 138 538 217 ]
+MatrixPredict [181 64 254 137 ]
+enter slk Process succeed.[459 138 538 217] 
+enter slk Process succeed.[181 64 254 137] 
+MatrixPredict [396 300 474 378 ]
+enter slk Process succeed.[396 300 474 378] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 396, top: 300, right: 474, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 459, top: 138, right: 538, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 181, top: 64, right: 254, bottom: 137
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [401 305 471 375 ]
+enter slk Process succeed.[401 305 471 375] 
+MatrixPredict [184 63 256 135 ]
+MatrixPredict [462 139 541 218 ]
+enter slk Process succeed.[184 63 256 135] 
+enter slk Process succeed.[462 139 541 218] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 401, top: 305, right: 471, bottom: 375
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 462, top: 139, right: 541, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 184, top: 63, right: 256, bottom: 135
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [187 66 255 134 ]
+MatrixPredict [403 306 472 375 ]
+enter slk Process succeed.[187 66 255 134] 
+enter slk Process succeed.[403 306 472 375] 
+MatrixPredict [462 138 544 220 ]
+enter slk Process succeed.[462 138 544 220] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 403, top: 306, right: 472, bottom: 375
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 462, top: 138, right: 544, bottom: 220
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 187, top: 66, right: 255, bottom: 134
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [467 138 544 215 ]
+enter slk Process succeed.[467 138 544 215] 
+MatrixPredict [399 301 477 379 ]
+enter slk Process succeed.[399 301 477 379] 
+MatrixPredict [192 68 258 134 ]
+enter slk Process succeed.[192 68 258 134] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 399, top: 301, right: 477, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 467, top: 138, right: 544, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 192, top: 68, right: 258, bottom: 134
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [470 144 547 221 ]
+MatrixPredict [403 305 477 379 ]
+MatrixPredict [189 67 268 146 ]
+enter slk Process succeed.[470 144 547 221] 
+enter slk Process succeed.[189 67 268 146] 
+enter slk Process succeed.[403 305 477 379] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 403, top: 305, right: 477, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 470, top: 144, right: 547, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 189, top: 67, right: 268, bottom: 146
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [473 148 546 221 ]
+enter slk Process succeed.[473 148 546 221] 
+MatrixPredict [405 306 480 381 ]
+enter slk Process succeed.[405 306 480 381] 
+MatrixPredict [189 74 265 150 ]
+enter slk Process succeed.[189 74 265 150] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 405, top: 306, right: 480, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 473, top: 148, right: 546, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 189, top: 74, right: 265, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [474 143 553 222 ]
+MatrixPredict [191 67 272 148 ]
+MatrixPredict [403 306 478 381 ]
+enter slk Process succeed.[474 143 553 222] 
+enter slk Process succeed.[403 306 478 381] 
+enter slk Process succeed.[191 67 272 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 403, top: 306, right: 478, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 474, top: 143, right: 553, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 191, top: 67, right: 272, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [406 305 482 381 ]
+MatrixPredict [477 141 559 223 ]
+MatrixPredict [198 68 278 148 ]
+enter slk Process succeed.[406 305 482 381] 
+enter slk Process succeed.[198 68 278 148] 
+enter slk Process succeed.[477 141 559 223] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 406, top: 305, right: 482, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 477, top: 141, right: 559, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 198, top: 68, right: 278, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [211 74 281 144 ]
+MatrixPredict [411 309 484 382 ]
+enter slk Process succeed.[211 74 281 144] 
+MatrixPredict [482 145 561 224 ]
+enter slk Process succeed.[411 309 484 382] 
+enter slk Process succeed.[482 145 561 224] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 411, top: 309, right: 484, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 482, top: 145, right: 561, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 211, top: 74, right: 281, bottom: 144
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [481 143 562 224 ]
+MatrixPredict [205 71 286 152 ]
+enter slk Process succeed.[481 143 562 224] 
+MatrixPredict [403 299 495 391 ]
+enter slk Process succeed.[205 71 286 152] 
+enter slk Process succeed.[403 299 495 391] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 403, top: 299, right: 495, bottom: 391
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 481, top: 143, right: 562, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 205, top: 71, right: 286, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [490 145 562 217 ]
+enter slk Process succeed.[490 145 562 217] 
+MatrixPredict [215 73 290 148 ]
+MatrixPredict [412 306 489 383 ]
+enter slk Process succeed.[412 306 489 383] 
+enter slk Process succeed.[215 73 290 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 412, top: 306, right: 489, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 490, top: 145, right: 562, bottom: 217
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 215, top: 73, right: 290, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [214 71 298 155 ]
+enter slk Process succeed.[214 71 298 155] 
+MatrixPredict [489 146 571 228 ]
+enter slk Process succeed.[489 146 571 228] 
+MatrixPredict [406 299 498 391 ]
+enter slk Process succeed.[406 299 498 391] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 406, top: 299, right: 498, bottom: 391
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 489, top: 146, right: 571, bottom: 228
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 214, top: 71, right: 298, bottom: 155
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [410 308 482 380 ]
+MatrixPredict [221 74 287 140 ]
+enter slk Process succeed.[410 308 482 380] 
+MatrixPredict [487 142 573 228 ]
+enter slk Process succeed.[221 74 287 140] 
+enter slk Process succeed.[487 142 573 228] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 410, top: 308, right: 482, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 487, top: 142, right: 573, bottom: 228
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 221, top: 74, right: 287, bottom: 140
+ File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00082.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00082.bmp.
+Thread 0, ImageId 83, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00083.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00083.bmp.
+Thread 0, ImageId 84, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00084.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00084.bmp.
+Thread 0, ImageId 85, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00085.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00085.bmp.
+Thread 0, ImageId 86, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00086.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00086.bmp.
+Thread 0, ImageId 87, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00087.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00087.bmp.
+Thread 0, ImageId 88, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00088.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00088.bmp.
+Thread 0, ImageId 89, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00089.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00089.bmp.
+Thread 0, ImageId 90, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00090.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00090.bmp.
+Thread 0, ImageId 91, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00091.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00091.bmp.
+Thread 0, ImageId 92, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00092.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00092.bmp.
+Thread 0, ImageId 93, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00093.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00093.bmp.
+Thread 0, ImageId 94, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00094.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00094.bmp.
+Thread 0, ImageId 95, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00095.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00095.bmp.
+Thread 0, ImageId 96, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00096.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00096.bmp.
+Thread 0, ImageId 97, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00097.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00097.bmp.
+Thread 0, ImageId 98, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00098.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00098.bmp.
+Thread 0, ImageId 99, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00099.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00099.bmp.
+Thread 0, ImageId 100, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00100.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00100.bmp.
+Thread 0, ImageId 101, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00101.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00101.bmp.
+Thread 0, ImageId 102, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00102.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/0010Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [422 301 504 383 ]
+MatrixPredict [211 64 308 161 ]
+enter slk Process succeed.[422 301 504 383] 
+MatrixPredict [493 138 576 221 ]
+enter slk Process succeed.[211 64 308 161] 
+enter slk Process succeed.[493 138 576 221] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 422, top: 301, right: 504, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 493, top: 138, right: 576, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 211, top: 64, right: 308, bottom: 161
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [505 137 580 212 ]
+MatrixPredict [227 65 310 148 ]
+MatrixPredict [416 295 502 381 ]
+enter slk Process succeed.[505 137 580 212] 
+enter slk Process succeed.[227 65 310 148] 
+enter slk Process succeed.[416 295 502 381] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 416, top: 295, right: 502, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 505, top: 137, right: 580, bottom: 212
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 227, top: 65, right: 310, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [414 303 495 384 ]
+MatrixPredict [230 69 309 148 ]
+MatrixPredict [499 140 582 223 ]
+enter slk Process succeed.[414 303 495 384] 
+enter slk Process succeed.[230 69 309 148] 
+enter slk Process succeed.[499 140 582 223] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 414, top: 303, right: 495, bottom: 384
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 499, top: 140, right: 582, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 230, top: 69, right: 309, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [420 305 495 380 ]
+enter slk Process succeed.[420 305 495 380] 
+MatrixPredict [231 67 316 152 ]
+MatrixPredict [503 141 587 225 ]
+enter slk Process succeed.[503 141 587 225] 
+enter slk Process succeed.[231 67 316 152] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 420, top: 305, right: 495, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 503, top: 141, right: 587, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 231, top: 67, right: 316, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [425 306 502 383 ]
+MatrixPredict [244 72 316 144 ]
+MatrixPredict [514 144 583 213 ]
+enter slk Process succeed.[425 306 502 383] 
+enter slk Process succeed.[514 144 583 213] 
+enter slk Process succeed.[244 72 316 144] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 425, top: 306, right: 502, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 514, top: 144, right: 583, bottom: 213
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 244, top: 72, right: 316, bottom: 144
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [242 71 320 149 ]
+MatrixPredict [430 307 499 376 ]
+MatrixPredict [519 139 592 212 ]
+enter slk Process succeed.[242 71 320 149] 
+enter slk Process succeed.[430 307 499 376] 
+enter slk Process succeed.[519 139 592 212] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 430, top: 307, right: 499, bottom: 376
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 519, top: 139, right: 592, bottom: 212
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 242, top: 71, right: 320, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [433 298 517 382 ]
+enter slk Process succeed.[433 298 517 382] 
+MatrixPredict [515 137 600 222 ]
+MatrixPredict [250 71 321 142 ]
+enter slk Process succeed.[250 71 321 142] 
+enter slk Process succeed.[515 137 600 222] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 433, top: 298, right: 517, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 515, top: 137, right: 600, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 250, top: 71, right: 321, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [250 70 329 149 ]
+enter slk Process succeed.[250 70 329 149] 
+MatrixPredict [439 304 516 381 ]
+MatrixPredict [522 137 601 216 ]
+enter slk Process succeed.[439 304 516 381] 
+enter slk Process succeed.[522 137 601 216] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 439, top: 304, right: 516, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 522, top: 137, right: 601, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 250, top: 70, right: 329, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [251 66 333 148 ]
+MatrixPredict [531 136 607 212 ]
+MatrixPredict [448 307 515 374 ]
+enter slk Process succeed.[531 136 607 212] 
+enter slk Process succeed.[448 307 515 374] 
+enter slk Process succeed.[251 66 333 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 448, top: 307, right: 515, bottom: 374
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 531, top: 136, right: 607, bottom: 212
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 251, top: 66, right: 333, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [530 142 615 227 ]
+MatrixPredict [448 302 523 377 ]
+enter slk Process succeed.[530 142 615 227] 
+MatrixPredict [248 61 336 149 ]
+enter slk Process succeed.[448 302 523 377] 
+enter slk Process succeed.[248 61 336 149] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 448, top: 302, right: 523, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 530, top: 142, right: 615, bottom: 227
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 248, top: 61, right: 336, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-168103968 -168103968]
+MatrixPredict [455 303 524 372 ]
+MatrixPredict [257 64 338 145 ]
+MatrixPredict [538 139 611 212 ]
+enter slk Process succeed.[455 303 524 372] 
+enter slk Process succeed.[257 64 338 145] 
+enter slk Process succeed.[538 139 611 212] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 455, top: 303, right: 524, bottom: 372
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 538, top: 139, right: 611, bottom: 212
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 257, top: 64, right: 338, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [543 137 619 213 ]
+MatrixPredict [457 299 537 379 ]
+MatrixPredict [262 66 339 143 ]
+enter slk Process succeed.[543 137 619 213] 
+enter slk Process succeed.[457 299 537 379] 
+enter slk Process succeed.[262 66 339 143] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 457, top: 299, right: 537, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 543, top: 137, right: 619, bottom: 213
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 262, top: 66, right: 339, bottom: 143
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [459 301 539 381 ]
+MatrixPredict [258 63 345 150 ]
+enter slk Process succeed.[459 301 539 381] 
+MatrixPredict [546 137 625 216 ]
+enter slk Process succeed.[258 63 345 150] 
+enter slk Process succeed.[546 137 625 216] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 459, top: 301, right: 539, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 546, top: 137, right: 625, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 258, top: 63, right: 345, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164370160 -164370160]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164370160 -164370160]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164370160 -164370160]
+MatrixPredict [461 305 536 380 ]
+MatrixPredict [542 139 625 222 ]
+MatrixPredict [259 65 342 148 ]
+enter slk Process succeed.[461 305 536 380] 
+enter slk Process succeed.[542 139 625 222] 
+enter slk Process succeed.[259 65 342 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 461, top: 305, right: 536, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 542, top: 139, right: 625, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 259, top: 65, right: 342, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59573792 -59573792]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59573792 -59573792]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59573792 -59573792]
+MatrixPredict [462 295 545 378 ]
+enter slk Process succeed.[462 295 545 378] 
+MatrixPredict [270 66 345 141 ]
+MatrixPredict [550 136 629 215 ]
+enter slk Process succeed.[550 136 629 215] 
+enter slk Process succeed.[270 66 345 141] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 462, top: 295, right: 545, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 550, top: 136, right: 629, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 270, top: 66, right: 345, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164508656 -164508656]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164508656 -164508656]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164508656 -164508656]
+MatrixPredict [472 298 552 378 ]
+MatrixPredict [272 60 357 145 ]
+MatrixPredict [554 137 642 225 ]
+enter slk Process succeed.[472 298 552 378] 
+enter slk Process succeed.[554 137 642 225] 
+enter slk Process succeed.[272 60 357 145] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 472, top: 298, right: 552, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 554, top: 137, right: 642, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 272, top: 60, right: 357, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [278 65 352 139 ]
+MatrixPredict [475 300 554 379 ]
+enter slk Process succeed.[278 65 352 139] 
+MatrixPredict [562 139 643 220 ]
+enter slk Process succeed.[475 300 554 379] 
+enter slk Process succeed.[562 139 643 220] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 475, top: 300, right: 554, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 562, top: 139, right: 643, bottom: 220
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 278, top: 65, right: 352, bottom: 139
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [563 135 649 221 ]
+MatrixPredict [478 301 555 378 ]
+enter slk Process succeed.[563 135 649 221] 
+MatrixPredict [271 61 362 152 ]
+enter slk Process succeed.[478 301 555 378] 
+enter slk Process succeed.[271 61 362 152] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 478, top: 301, right: 555, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 563, top: 135, right: 649, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 271, top: 61, right: 362, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [568 143 653 228 ]
+enter slk Process succeed.[568 143 653 228] 
+MatrixPredict [280 71 361 152 ]
+MatrixPredict [482 309 559 386 ]
+enter slk Process succeed.[482 309 559 386] 
+enter slk Process succeed.[280 71 361 152] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 482, top: 309, right: 559, bottom: 386
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 568, top: 143, right: 653, bottom: 228
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 280, top: 71, right: 361, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [287 71 361 145 ]
+MatrixPredict [572 146 652 226 ]
+enter slk Process succeed.[572 146 652 226] 
+enter slk Process succeed.[287 71 361 145] 
+MatrixPredict [486 309 558 381 ]
+enter slk Process succeed.[486 309 558 381] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 486, top: 309, right: 558, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 572, top: 146, right: 652, bottom: 226
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 287, top: 71, right: 361, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+MatrixPredict [283 67 366 150 ]
+MatrixPredict [579 145 656 222 ]
+enter slk Process succeed.[579 145 656 222] 
+enter slk Process succeed.[283 67 366 150] 
+MatrixPredict [489 310 557 378 ]
+enter slk Process succeed.[489 310 557 378] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 489, top: 310, right: 557, bottom: 378
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 579, top: 145, right: 656, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 283, top: 67, right: 366, bottom: 150
+2.bmp.
+Thread 0, ImageId 103, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00103.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00103.bmp.
+Thread 0, ImageId 104, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00104.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00104.bmp.
+Thread 0, ImageId 105, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00105.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00105.bmp.
+Thread 0, ImageId 106, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00106.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00106.bmp.
+Thread 0, ImageId 107, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00107.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00107.bmp.
+Thread 0, ImageId 108, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00108.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00108.bmp.
+Thread 0, ImageId 109, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00109.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00109.bmp.
+Thread 0, ImageId 110, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00110.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00110.bmp.
+Thread 0, ImageId 111, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00111.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00111.bmp.
+Thread 0, ImageId 112, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00112.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00112.bmp.
+Thread 0, ImageId 113, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00113.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00113.bmp.
+Thread 0, ImageId 114, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00114.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00114.bmp.
+Thread 0, ImageId 115, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00115.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00115.bmp.
+Thread 0, ImageId 116, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00116.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00116.bmp.
+Thread 0, ImageId 117, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00117.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00117.bmp.
+Thread 0, ImageId 118, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00118.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00118.bmp.
+Thread 0, ImageId 119, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00119.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00119.bmp.
+Thread 0, ImageId 120, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00120.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00120.bmp.
+Thread 0, ImageId 121, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00121.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00121.bmp.
+Thread 0, ImageId 122, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00122.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00122.bmp.
+Thread 0, ImageId 123, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00123.bmp
+Result images Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-56893408 -56893408]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-56893408 -56893408]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-56893408 -56893408]
+MatrixPredict [582 140 657 215 ]
+MatrixPredict [287 67 370 150 ]
+enter slk Process succeed.[582 140 657 215] 
+enter slk Process succeed.[287 67 370 150] 
+MatrixPredict [487 307 561 381 ]
+enter slk Process succeed.[487 307 561 381] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 487, top: 307, right: 561, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 582, top: 140, right: 657, bottom: 215
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 287, top: 67, right: 370, bottom: 150
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+MatrixPredict [487 307 560 380 ]
+MatrixPredict [578 133 667 222 ]
+MatrixPredict [290 69 368 147 ]
+enter slk Process succeed.[487 307 560 380] 
+enter slk Process succeed.[290 69 368 147] 
+enter slk Process succeed.[578 133 667 222] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 487, top: 307, right: 560, bottom: 380
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 578, top: 133, right: 667, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 290, top: 69, right: 368, bottom: 147
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [587 147 658 218 ]
+MatrixPredict [490 308 561 379 ]
+MatrixPredict [302 73 368 139 ]
+enter slk Process succeed.[587 147 658 218] 
+enter slk Process succeed.[490 308 561 379] 
+enter slk Process succeed.[302 73 368 139] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 490, top: 308, right: 561, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 587, top: 147, right: 658, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 302, top: 73, right: 368, bottom: 139
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+MatrixPredict [488 309 558 379 ]
+MatrixPredict [293 67 375 149 ]
+MatrixPredict [581 135 664 218 ]
+enter slk Process succeed.[488 309 558 379] 
+enter slk Process succeed.[293 67 375 149] 
+enter slk Process succeed.[581 135 664 218] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 488, top: 309, right: 558, bottom: 379
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 581, top: 135, right: 664, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 293, top: 67, right: 375, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+MatrixPredict [489 309 557 377 ]
+MatrixPredict [588 143 661 216 ]
+enter slk Process succeed.[489 309 557 377] 
+enter slk Process succeed.[588 143 661 216] 
+MatrixPredict [304 72 373 141 ]
+enter slk Process succeed.[304 72 373 141] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 489, top: 309, right: 557, bottom: 377
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 588, top: 143, right: 661, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 304, top: 72, right: 373, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167838976 -167838976]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167838976 -167838976]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167838976 -167838976]
+MatrixPredict [299 66 384 151 ]
+MatrixPredict [487 309 559 381 ]
+enter slk Process succeed.[299 66 384 151] 
+MatrixPredict [587 140 667 220 ]
+enter slk Process succeed.[487 309 559 381] 
+enter slk Process succeed.[587 140 667 220] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 487, top: 309, right: 559, bottom: 381
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 587, top: 140, right: 667, bottom: 220
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 299, top: 66, right: 384, bottom: 151
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [303 72 383 152 ]
+MatrixPredict [484 310 559 385 ]
+MatrixPredict [581 133 670 222 ]
+enter slk Process succeed.[303 72 383 152] 
+enter slk Process succeed.[484 310 559 385] 
+enter slk Process succeed.[581 133 670 222] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 484, top: 310, right: 559, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 581, top: 133, right: 670, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 303, top: 72, right: 383, bottom: 152
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [486 312 556 382 ]
+enter slk Process succeed.[486 312 556 382] 
+MatrixPredict [586 148 661 223 ]
+MatrixPredict [309 74 383 148 ]
+enter slk Process succeed.[586 148 661 223] 
+enter slk Process succeed.[309 74 383 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 486, top: 312, right: 556, bottom: 382
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 586, top: 148, right: 661, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 309, top: 74, right: 383, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+MatrixPredict [484 315 552 383 ]
+MatrixPredict [583 145 664 226 ]
+enter slk Process succeed.[484 315 552 383] 
+MatrixPredict [309 73 384 148 ]
+enter slk Process succeed.[583 145 664 226] 
+enter slk Process succeed.[309 73 384 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 484, top: 315, right: 552, bottom: 383
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 583, top: 145, right: 664, bottom: 226
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 309, top: 73, right: 384, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58156480 -58156480]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58156480 -58156480]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58156480 -58156480]
+MatrixPredict [314 73 387 146 ]
+MatrixPredict [582 147 662 227 ]
+MatrixPredict [483 318 551 386 ]
+enter slk Process succeed.[582 147 662 227] 
+enter slk Process succeed.[314 73 387 146] 
+enter slk Process succeed.[483 318 551 386] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 483, top: 318, right: 551, bottom: 386
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 582, top: 147, right: 662, bottom: 227
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 314, top: 73, right: 387, bottom: 146
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-57741728 -57741728]
+MatrixPredict [482 321 546 385 ]
+enter slk Process succeed.[482 321 546 385] 
+MatrixPredict [308 69 387 148 ]
+MatrixPredict [585 146 655 216 ]
+enter slk Process succeed.[308 69 387 148] 
+enter slk Process succeed.[585 146 655 216] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 482, top: 321, right: 546, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 585, top: 146, right: 655, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 308, top: 69, right: 387, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58175456 -58175456]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58175456 -58175456]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-58175456 -58175456]
+MatrixPredict [481 313 559 391 ]
+enter slk Process succeed.[481 313 559 391] 
+MatrixPredict [575 144 659 228 ]
+MatrixPredict [306 65 394 153 ]
+enter slk Process succeed.[575 144 659 228] 
+enter slk Process succeed.[306 65 394 153] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 481, top: 313, right: 559, bottom: 391
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 575, top: 144, right: 659, bottom: 228
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 306, top: 65, right: 394, bottom: 153
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+MatrixPredict [578 149 658 229 ]
+MatrixPredict [312 67 394 149 ]
+MatrixPredict [483 320 554 391 ]
+enter slk Process succeed.[483 320 554 391] 
+enter slk Process succeed.[578 149 658 229] 
+enter slk Process succeed.[312 67 394 149] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 483, top: 320, right: 554, bottom: 391
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 578, top: 149, right: 658, bottom: 229
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 312, top: 67, right: 394, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [312 67 394 149 ]
+MatrixPredict [481 314 564 397 ]
+MatrixPredict [578 152 652 226 ]
+enter slk Process succeed.[312 67 394 149] 
+enter slk Process succeed.[481 314 564 397] 
+enter slk Process succeed.[578 152 652 226] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 481, top: 314, right: 564, bottom: 397
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 578, top: 152, right: 652, bottom: 226
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 312, top: 67, right: 394, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-59448432 -59448432]
+MatrixPredict [483 307 570 394 ]
+MatrixPredict [320 71 392 143 ]
+MatrixPredict [579 152 651 224 ]
+enter slk Process succeed.[483 307 570 394] 
+enter slk Process succeed.[320 71 392 143] 
+enter slk Process succeed.[579 152 651 224] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 483, top: 307, right: 570, bottom: 394
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 579, top: 152, right: 651, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 320, top: 71, right: 392, bottom: 143
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [579 151 655 227 ]
+MatrixPredict [318 69 398 149 ]
+MatrixPredict [486 312 570 396 ]
+enter slk Process succeed.[318 69 398 149] 
+enter slk Process succeed.[579 151 655 227] 
+enter slk Process succeed.[486 312 570 396] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 486, top: 312, right: 570, bottom: 396
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 579, top: 151, right: 655, bottom: 227
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 318, top: 69, right: 398, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164426736 -164426736]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164426736 -164426736]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164426736 -164426736]
+MatrixPredict [579 154 650 225 ]
+MatrixPredict [324 71 398 145 ]
+enter slk Process succeed.[579 154 650 225] 
+MatrixPredict [491 317 566 392 ]
+enter slk Process succeed.[324 71 398 145] 
+enter slk Process succeed.[491 317 566 392] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 491, top: 317, right: 566, bottom: 392
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 579, top: 154, right: 650, bottom: 225
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 324, top: 71, right: 398, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-60424048 -60424048]
+MatrixPredict [326 69 402 145 ]
+MatrixPredict [496 316 570 390 ]
+enter slk Process succeed.[326 69 402 145] 
+enter slk Process succeed.[496 316 570 390] 
+MatrixPredict [582 155 651 224 ]
+enter slk Process succeed.[582 155 651 224] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 496, top: 316, right: 570, bottom: 390
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 582, top: 155, right: 651, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 326, top: 69, right: 402, bottom: 145
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [504 312 577 385 ]
+MatrixPredict [584 156 650 222 ]
+MatrixPredict [336 71 405 140 ]
+enter slk Process succeed.[584 156 650 222] 
+enter slk Process succeed.[504 312 577 385] 
+enter slk Process succeed.[336 71 405 140] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 504, top: 312, right: 577, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 584, top: 156, right: 650, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 336, top: 71, right: 405, bottom: 140
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167713792 -167713792]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167713792 -167713792]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-167713792 -167713792]
+MatrixPredict [506 311 580 385 ]
+MatrixPredict [331 65 409 143 ]
+MatrixPredict [587 159 650 222 ]
+enter slk Process succeed.[331 65 409 143] 
+enter slk Process succeed.[587 159 650 222] 
+enter slk Process succeed.[506 311 580 385] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 506, top: 311, right: 580, bottom: 385
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 587, top: 159, right: 650, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 331, top: 65, right: 409, bottom: 143
+saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00123.bmp.
+Thread 0, ImageId 124, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00124.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00124.bmp.
+Thread 0, ImageId 125, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00125.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00125.bmp.
+Thread 0, ImageId 126, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00126.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00126.bmp.
+Thread 0, ImageId 127, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00127.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00127.bmp.
+Thread 0, ImageId 128, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00128.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00128.bmp.
+Thread 0, ImageId 129, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00129.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00129.bmp.
+Thread 0, ImageId 130, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00130.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00130.bmp.
+Thread 0, ImageId 131, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00131.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00131.bmp.
+Thread 0, ImageId 132, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00132.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00132.bmp.
+Thread 0, ImageId 133, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00133.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00133.bmp.
+Thread 0, ImageId 134, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00134.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00134.bmp.
+Thread 0, ImageId 135, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00135.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00135.bmp.
+Thread 0, ImageId 136, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00136.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00136.bmp.
+Thread 0, ImageId 137, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00137.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00137.bmp.
+Thread 0, ImageId 138, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00138.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00138.bmp.
+Thread 0, ImageId 139, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00139.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00139.bmp.
+Thread 0, ImageId 140, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00140.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00140.bmp.
+Thread 0, ImageId 141, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00141.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00141.bmp.
+Thread 0, ImageId 142, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00142.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00142.bmp.
+Thread 0, ImageId 143, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00143.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00143.bmp.
+Thread 0, ImageId 144, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rCapture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [592 160 656 224 ]
+MatrixPredict [339 69 411 141 ]
+MatrixPredict [511 309 590 388 ]
+enter slk Process succeed.[592 160 656 224] 
+enter slk Process succeed.[339 69 411 141] 
+enter slk Process succeed.[511 309 590 388] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 511, top: 309, right: 590, bottom: 388
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 592, top: 160, right: 656, bottom: 224
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 339, top: 69, right: 411, bottom: 141
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-169170032 -169170032]
+MatrixPredict [339 64 422 147 ]
+MatrixPredict [593 159 660 226 ]
+MatrixPredict [513 305 596 388 ]
+enter slk Process succeed.[593 159 660 226] 
+enter slk Process succeed.[339 64 422 147] 
+enter slk Process succeed.[513 305 596 388] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 513, top: 305, right: 596, bottom: 388
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 593, top: 159, right: 660, bottom: 226
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 339, top: 64, right: 422, bottom: 147
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+MatrixPredict [339 64 423 148 ]
+MatrixPredict [593 160 655 222 ]
+enter slk Process succeed.[593 160 655 222] 
+MatrixPredict [516 313 590 387 ]
+enter slk Process succeed.[339 64 423 148] 
+enter slk Process succeed.[516 313 590 387] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 516, top: 313, right: 590, bottom: 387
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 593, top: 160, right: 655, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 339, top: 64, right: 423, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [521 316 594 389 ]
+MatrixPredict [344 67 425 148 ]
+enter slk Process succeed.[521 316 594 389] 
+MatrixPredict [598 159 662 223 ]
+enter slk Process succeed.[344 67 425 148] 
+enter slk Process succeed.[598 159 662 223] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 521, top: 316, right: 594, bottom: 389
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 598, top: 159, right: 662, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 344, top: 67, right: 425, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [345 64 430 149 ]
+MatrixPredict [524 316 598 390 ]
+enter slk Process succeed.[524 316 598 390] 
+enter slk Process succeed.[345 64 430 149] 
+MatrixPredict [599 155 663 219 ]
+enter slk Process succeed.[599 155 663 219] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 524, top: 316, right: 598, bottom: 390
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 599, top: 155, right: 663, bottom: 219
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 345, top: 64, right: 430, bottom: 149
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+calcOpticalFlowPyrLK m_mtPrev matCur [-55668704 -55668704]
+MatrixPredict [345 63 428 146 ]
+MatrixPredict [600 151 665 216 ]
+enter slk Process succeed.[600 151 665 216] 
+MatrixPredict [520 318 596 394 ]
+enter slk Process succeed.[345 63 428 146] 
+enter slk Process succeed.[520 318 596 394] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 520, top: 318, right: 596, bottom: 394
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 600, top: 151, right: 665, bottom: 216
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 345, top: 63, right: 428, bottom: 146
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [602 147 673 218 ]
+MatrixPredict [350 66 427 143 ]
+MatrixPredict [527 326 598 397 ]
+enter slk Process succeed.[602 147 673 218] 
+enter slk Process succeed.[350 66 427 143] 
+enter slk Process succeed.[527 326 598 397] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 527, top: 326, right: 598, bottom: 397
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 602, top: 147, right: 673, bottom: 218
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 350, top: 66, right: 427, bottom: 143
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+MatrixPredict [534 341 598 405 ]
+enter slk Process succeed.[534 341 598 405] 
+MatrixPredict [608 151 679 222 ]
+MatrixPredict [352 71 429 148 ]
+enter slk Process succeed.[608 151 679 222] 
+enter slk Process succeed.[352 71 429 148] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 534, top: 341, right: 598, bottom: 405
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 608, top: 151, right: 679, bottom: 222
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 352, top: 71, right: 429, bottom: 148
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-164639760 -164639760]
+MatrixPredict [610 152 681 223 ]
+MatrixPredict [347 69 424 146 ]
+MatrixPredict [531 351 594 414 ]
+enter slk Process succeed.[610 152 681 223] 
+enter slk Process succeed.[531 351 594 414] 
+enter slk Process succeed.[347 69 424 146] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 531, top: 351, right: 594, bottom: 414
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 610, top: 152, right: 681, bottom: 223
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 347, top: 69, right: 424, bottom: 146
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165146560 -165146560]
+calcOpticalFlowPyrLK m_mtPrev matCur [-165146560 -165146560]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165146560 -165146560]
+MatrixPredict [611 150 682 221 ]
+MatrixPredict [530 353 594 417 ]
+MatrixPredict [352 72 416 136 ]
+enter slk Process succeed.[530 353 594 417] 
+enter slk Process succeed.[611 150 682 221] 
+enter slk Process succeed.[352 72 416 136] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 530, top: 353, right: 594, bottom: 417
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 611, top: 150, right: 682, bottom: 221
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 352, top: 72, right: 416, bottom: 136
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-163420112 -163420112]
+MatrixPredict [533 358 593 418 ]
+MatrixPredict [343 70 415 142 ]
+MatrixPredict [612 148 691 227 ]
+enter slk Process succeed.[533 358 593 418] 
+enter slk Process succeed.[343 70 415 142] 
+enter slk Process succeed.[612 148 691 227] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 533, top: 358, right: 593, bottom: 418
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 612, top: 148, right: 691, bottom: 227
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 343, top: 70, right: 415, bottom: 142
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+handle: 000000005A6C5A76, track_id:4, frame:0, update
+handle: 000000005A6C5A76, track_id:2, frame:0, update
+handle: 000000005A6C5A76, track_id:1, frame:0, update
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+enter slk Process start
+calcOpticalFlowPyrLK m_mtPrev matCur [-165469152 -165469152]
+MatrixPredict [336 71 411 146 ]
+MatrixPredict [533 358 592 417 ]
+MatrixPredict [614 150 693 229 ]
+enter slk Process succeed.[533 358 592 417] 
+enter slk Process succeed.[336 71 411 146] 
+enter slk Process succeed.[614 150 693 229] 
+handle: 000000005A6C5A76, track_id: 4, frame: 0, left: 533, top: 358, right: 592, bottom: 417
+handle: 000000005A6C5A76, track_id: 2, frame: 0, left: 614, top: 150, right: 693, bottom: 229
+handle: 000000005A6C5A76, track_id: 1, frame: 0, left: 336, top: 71, right: 411, bottom: 146
+Capture Frame 0, FaceCnt 3, IsDetect 1, DetectCnt 3
+DestoryBlkTrackerHandle, deleted: 000000005A6C5A76
+SingleObjTrackLoop, handle: 000000005A6C5A76, thread: SingleObjTrackLoop, handle: 000000005A6C5A76SingleObjTrackLoop, handle: 000000005A6C5A76, thread: 1, existSingleObjTrackLoop, handle: 000000005A6C5A76, thread: 3, exist
+0, exist
+
+, thread: 2, exist
+UpdateTrackObjsLoop, handle: 000000005A6C5A76, thread exist
+c0\test\benchmark\tracker\data\track3\00144.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00144.bmp.
+Thread 0, ImageId 145, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00145.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00145.bmp.
+Thread 0, ImageId 146, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00146.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00146.bmp.
+Thread 0, ImageId 147, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00147.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00147.bmp.
+Thread 0, ImageId 148, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00148.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00148.bmp.
+Thread 0, ImageId 149, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00149.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00149.bmp.
+Thread 0, ImageId 150, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00150.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00150.bmp.
+Thread 0, ImageId 151, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00151.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00151.bmp.
+Thread 0, ImageId 152, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00152.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00152.bmp.
+Thread 0, ImageId 153, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00153.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00153.bmp.
+Thread 0, ImageId 154, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00154.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00154.bmp.
+Thread 0, ImageId 155, Size 720 * 576, File F:\SDK\Windows\v2.1.2\rc0\test\benchmark\tracker\data\track3\00155.bmp
+Result images saved in F:\SDK\Windows\v2.1.2\rc1\output\capturer_result/00155.bmp.
+
+Summary:
+FileCnt: 200,	LoopCnt 1,	Run: 156
+Test F:\SDK\Windows\v2.1.2\rc1\output\capturer_result Run Done! ThreadCnt 1, TotalTime: 31.132614s, AverageTime: 0.199568s, Capacity: 5.010822, AverageDelay: 0.199566s, MaxDelay: 0.878636s
+
+Test F:\SDK\Windows\v2.1.2\rc1\output\capturer_result Result - Fail
+IFaceRecSDK UnInit...
