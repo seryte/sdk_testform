@@ -96,8 +96,7 @@
                 <br>
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
-                        运行测试
-                        <i class="el-icon-loading"></i>
+                        <i class="el-icon-loading" id="runing" style="display: none"></i> 运行测试
                     </button>
                      <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
                         上传
@@ -138,7 +137,7 @@
                 $(this).attr('title', "请稍后，后台正在处理中");
                 $("#upload").attr('title', "请稍后，后台正在处理中");
 
-
+                $("#runing").show();
                 $("#imgprompt").hide();
                 $("#loading").show();
                 $("#prompt").hide();
@@ -156,6 +155,7 @@
                     $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
                     $("#prompt").show();
                     $("#loading").hide();
+                    $("#runing").hide();
 
                     //运行结束启用上传和测试按钮
                     $("#send").attr('disabled', false);
