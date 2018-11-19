@@ -34,7 +34,8 @@ def modifybat(file, old_str, new_str):
 
 def sdk_test(request):
     if request.method == "POST":
-        batdir = "I:\\v2.1.2\\rc1\\"
+        batdir = "F:\\SDK\\Windows\\v2.1.2\\rc1\\"
+        # batdir = "I:\\v2.1.2\\rc1\\"
         runbat = batdir + "run64.bat"
         interface = request.POST.get("interface", "")
         algversion = request.POST.get("algversion", "")
