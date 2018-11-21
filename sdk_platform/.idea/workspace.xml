@@ -44,11 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linsdk_manage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="93" column="139" selection-start-line="93" selection-start-column="139" selection-end-line="93" selection-end-column="139" />
             </state>
           </provider>
         </entry>
@@ -99,12 +108,12 @@
         <option value="$PROJECT_DIR$/sdk_platform/urls.py" />
         <option value="$PROJECT_DIR$/sdk_platform/settings.py" />
         <option value="$PROJECT_DIR$/sdk_app/urls.py" />
-        <option value="$PROJECT_DIR$/templates/linsdk_manage.html" />
         <option value="$PROJECT_DIR$/static/css/loading.css" />
         <option value="$PROJECT_DIR$/templates/sdk_manage.html" />
         <option value="$PROJECT_DIR$/sdk_app/views.py" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/linsdk_manage.html" />
       </list>
     </option>
   </component>
@@ -568,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -643,6 +645,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="93" column="139" selection-start-line="93" selection-start-column="139" selection-end-line="93" selection-end-column="139" />
         </state>
       </provider>
     </entry>
