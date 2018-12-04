@@ -34,8 +34,8 @@
                     <li><a href="/manage/linsdk_manage/">Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="/interface/case_manage/">Arm-android平台</a></li>
-                    <li><a href="">Arm-Linux平台</a></li>
+                    <li><a href="#">Arm-android平台</a></li>
+                    <li><a href="#">Arm-Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="">Arm-ios平台</a></li>
@@ -57,14 +57,14 @@
 
                     <span class="input-group-addon">选择接口</span>
                     <select class="form-control" id="interface">
-                        <option name="detect">人脸检测</option>
-                        <option name="extractor">特征提取</option>
-                        <option name="compare">1比1比对</option>
-                        <option name="search">人脸搜索(1:N)</option>
-                        <option name="predictor">人脸属性</option>
-                        <option name="capturer">人脸抓拍</option>
-                        <option name="tracker">人脸跟踪</option>
-                        <option name="all">全部</option>
+                        <option value="detector" name="ifname" selected="selected">人脸检测</option>
+                        <option value="extractor" name="ifname">特征提取</option>
+                        <option value="comparer" name="ifname">1比1比对</option>
+                        <option value="searcher" name="ifname">人脸搜索(1:N)</option>
+                        <option value="predictor" name="ifname">人脸属性</option>
+                        <option value="capturer" name="ifname">人脸抓拍</option>
+                        <option value="tracker" name="ifname">人脸跟踪</option>
+                        <option value="select_all" name="ifname">全部</option>
                     </select>
                 </div>
 
@@ -142,7 +142,7 @@
                 $("#loading").show();
                 $("#prompt").hide();
                 $("#result").val('');
-                let sdk_interface = $("#interface").val();
+                let sdk_interface = $('option[name="ifname"]:selected').val();
                 let algversion = $('#algversion').val();
                 let sdkversion = $("#sdkversion").val();
 

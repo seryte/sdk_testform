@@ -30,11 +30,11 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li ><a href="/manage/sdk_manage/">Windows平台</a></li>
+                    <li><a href="/manage/sdk_manage/">Windows平台</a></li>
                     <li class="active"><a href="/manage/linsdk_manage/">Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="#">Arm-android平台</a></li>
+                    <li><a href="/interface/case_manage/">Arm-android平台</a></li>
                     <li><a href="">Arm-Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
@@ -46,21 +46,25 @@
 
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
                 <h1><span class="label label-primary">Linux平台</span></h1><br>
-
+                <div class="alert alert-success" id="prompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                    <strong>Well done!</strong> 上传成功!
+                </div>
+                <div class="alert alert-danger" id="imgprompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                    <strong>Oh snap!</strong> 请上传测试图像!
+                </div>
                 <div class="input-group">
 
                     <span class="input-group-addon">选择接口</span>
                     <select class="form-control" id="interface">
-                        <option>人脸检测</option>
-                        <option>特征提取</option>
-                        <option>1比1比对</option>
-                        <option>人脸搜索(1:N)</option>
-                        <option>人脸属性</option>
-                        <option>人脸抓拍</option>
-                        <option>人脸跟踪</option>
-                        <option>全部</option>
+                        <option value="detector" name="ifname" selected="selected">人脸检测</option>
+                        <option value="extractor" name="ifname">特征提取</option>
+                        <option value="comparer" name="ifname">1比1比对</option>
+                        <option value="searcher" name="ifname">人脸搜索(1:N)</option>
+                        <option value="predictor" name="ifname">人脸属性</option>
+                        <option value="capturer" name="ifname">人脸抓拍</option>
+                        <option value="tracker" name="ifname">人脸跟踪</option>
+                        <option value="select_all" name="ifname">全部</option>
                     </select>
                 </div>
 
@@ -85,16 +89,26 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon" id="imgfile" placeholder="多张请压缩上传">测试图像</span>
-                    <input type="file" class="form-control">
+                    <span class="input-group-addon">测试图像</span>
+                    <input type="file" class="form-control" id="file_upload">
                 </div>
 
                 <br>
                 <div style="width: 100%; height: 60px;">
-                    <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;" disabled title="功能暂未开发">
-                        运行测试
+                    <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
+                        <i class="el-icon-loading" id="runing" style="display: none"></i> 运行测试
+                    </button>
+                     <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
+                        上传
                     </button>
                 </div>
+{#                加载样式#}
+                <div id="loading" class="spinner" style="display: none">
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+                </div>
+
                 <div>
                     <p class="btn btn-warning">返回结果</p>
                     <textarea id="result" class="form-control" rows="15" name=textarea></textarea>
@@ -116,21 +130,69 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
-                let sdk_interface = $("#interface").val();
+
+                //点击完运行测试按钮，置灰按钮，不允许重复发送
+                $(this).attr('disabled', true);
+                $("#upload").attr('disabled', true);
+                $(this).attr('title', "请稍后，后台正在处理中");
+                $("#upload").attr('title', "请稍后，后台正在处理中");
+
+                $("#runing").show();
+                $("#imgprompt").hide();
+                $("#loading").show();
+                $("#prompt").hide();
+                $("#result").val('');
+                let sdk_interface = $('option[name="ifname"]:selected').val();
                 let algversion = $('#algversion').val();
                 let sdkversion = $("#sdkversion").val();
 
-
-                $.post("/manage/sdk_test/", {
+                $.post("/manage/linsdk_test/", {
                     "interface": sdk_interface,
                     "algversion": algversion,
                     "sdkversion": sdkversion
                 }, function (resp) {
                     $("#result").val(resp);
+                    $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
+                    $("#prompt").show();
+                    $("#loading").hide();
+                    $("#runing").hide();
+
+                    //运行结束启用上传和测试按钮
+                    $("#send").attr('disabled', false);
+                    $("#upload").attr('disabled', false);
+                    $("#send").removeAttr("title");
+                    $("#upload").removeAttr("title");
                 });
 
-            })
+            });
 
         });
+            //上传图像
+            function FileUpload() {
+                $("#prompt").hide();
+                if ($("#file_upload").val() === ""){
+                    $("#imgprompt").show();
+                    return false;
+                }
+            $("#imgprompt").hide();
+            $("#loading").show();
+            var form_data = new FormData();
+            var file_info =$('#file_upload')[0].files[0];
+            form_data.append('file',file_info);
+
+            $.ajax({
+                url:'/manage/upload/',
+                type:'POST',
+                data: form_data,
+                processData: false,
+                contentType: false,
+                success: function(callback) {
+                    console.log('ok');
+                     $("#loading").hide();
+                    $("#prompt").show();
+                }
+            });
+        }
+
     </script>
 {% endblock %}

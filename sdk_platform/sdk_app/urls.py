@@ -1,10 +1,14 @@
 from django.urls import path
-from sdk_app import views
+from sdk_app.views import linviews, winviews
 
 urlpatterns = [
-    path('sdk_manage/', views.sdk_manage),
-    path('sdk_test/', views.sdk_test),
-    path('linsdk_manage/', views.linsdk_manage),
-    path('upload/', views.upload)
 
+    # windows平台
+    path('sdk_manage/', winviews.sdk_manage),
+    path('sdk_test/', winviews.sdk_test),
+    path('upload/', winviews.upload),
+
+    # linux平台
+    path('linsdk_manage/', linviews.linsdk_manage),
+    path('linsdk_test/', linviews.linsdk_test)
 ]
