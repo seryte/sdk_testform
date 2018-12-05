@@ -1,6 +1,13 @@
+import os
 import paramiko
 from django.http import HttpResponse
 from django.shortcuts import render
+
+sdkdir = "/home/intellif/SDK/IFaceRecSDK/v2.1.0/rc1/"
+server = "192.168.11.25"
+port = 22
+username = "intellif"
+password = "introcksai"
 
 
 def linsdk_manage(request):
@@ -15,8 +22,7 @@ def linsdk_test(request):
 
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect('192.168.11.25', 22, 'intellif', 'introcksai', timeout=5)
-        sdkdir = "/home/intellif/SDK/IFaceRecSDK/v2.1.0/rc1/"
+        ssh.connect(server, port, username, password, timeout=5)
 
         if interface == "detector":
             ssh.exec_command(
@@ -115,3 +121,21 @@ def linsdk_test(request):
             return HttpResponse(result)
     else:
         return HttpResponse("请求方法不正确")
+
+
+def linupload(request):
+    if request.method == 'POST':
+        # 先上传到本地，再上传到服务器
+        file_obj = request.FILES.get('file')
+        f = open(os.path.join('linupload', file_obj.name), 'wb')
+        print(file_obj, type(file_obj))
+        for chunk in file_obj.chunks():
+            f.write(chunk)
+        f.close()
+
+        t = paramiko.Transport((server, port))
+        t.connect(username=username, password=password)
+        sftp = paramiko.SFTPClient.from_transport(t)
+        for i in os.listdir("linupload"):
+            sftp.put(os.path.join("linupload", i), os.path.join(sdkdir + "tpcase/", i))
+        return HttpResponse('OK')

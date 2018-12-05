@@ -10,5 +10,6 @@ urlpatterns = [
 
     # linux平台
     path('linsdk_manage/', linviews.linsdk_manage),
-    path('linsdk_test/', linviews.linsdk_test)
+    path('linsdk_test/', linviews.linsdk_test),
+    path('linupload/', linviews.linupload)
 ]
