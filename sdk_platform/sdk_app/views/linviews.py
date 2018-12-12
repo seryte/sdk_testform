@@ -1,19 +1,23 @@
 import os
 import paramiko
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 
 sdkdir = "/home/intellif/SDK/IFaceRecSDK/v2.1.0/rc1/"
+outdir = sdkdir + "output/"
 server = "192.168.11.25"
 port = 22
 username = "intellif"
 password = "introcksai"
 
 
+@login_required
 def linsdk_manage(request):
     return render(request, "linsdk_manage.html")
 
 
+@login_required
 def linsdk_test(request):
     if request.method == "POST":
         interface = request.POST.get("interface", "")
@@ -111,11 +115,13 @@ def linsdk_test(request):
         elif interface == "select_all":
             ssh.exec_command(
                 "sed -i 's/^#${/${/' " + sdkdir + "run.sh")
-            stdin, stdout, stderr = ssh.exec_command("cd " + sdkdir + " && ./run.sh >>" + sdkdir + "all.txt")
+            stdin, stdout, stderr = ssh.exec_command("cd " + sdkdir + " && ./run.sh")
             stdout.read().decode()
+            ssh.exec_command(
+                "cat " + outdir + "detector_result/log.txt " + outdir + "comparer_result/log.txt " + outdir + "searcher_result/log.txt " + outdir + "extractor_result/log.txt " + outdir + "predictor_result/log.txt " + outdir + "capturer_result/log.txt " + outdir + "tracker_result/log.txt >" + sdkdir + "all_result.txt")
             ssh.exec_command("sed -i 's/^${/#${/' " + sdkdir + "run.sh")
             sftp = ssh.open_sftp()
-            relog = sftp.open(sdkdir + "all.txt")
+            relog = sftp.open(sdkdir + "all_result.txt")
             result = relog.read().decode()
             relog.close()
             return HttpResponse(result)

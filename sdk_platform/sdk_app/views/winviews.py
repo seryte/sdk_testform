@@ -5,6 +5,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from threading import Thread
 
 # Create your views here.
+batdir = "F:\\SDK\\Windows\\v2.1.2\\rc1\\"
+runbat = batdir + "run64.bat"
+outdir = batdir + "output\\"
+
 
 def sdk_manage(request):
     return render(request, "winsdk_manage.html")
@@ -34,9 +38,6 @@ def modifybat(file, old_str, new_str):
 
 def sdk_test(request):
     if request.method == "POST":
-        batdir = "F:\\SDK\\Windows\\v2.1.2\\rc1\\"
-        # batdir = "I:\\v2.1.2\\rc1\\"
-        runbat = batdir + "run64.bat"
         interface = request.POST.get("interface", "")
         algversion = request.POST.get("algversion", "")
         sdkversion = request.POST.get("sdkversion", "")
@@ -92,12 +93,11 @@ def sdk_test(request):
                 return HttpResponse(f.read())
         elif interface == "select_all":
             modifybat(runbat, "rem call", "call")
-            os.system(runbat+">>"+batdir+"all_log.txt")
+            os.system(runbat)
+            os.system(
+                "copy " + outdir + "detector_result\\log.txt+" + outdir + "comparer_result\\log.txt+" + outdir + "extractor_result\\log.txt+" + outdir + "tracker_result\\log.txt+" + outdir + "predictor_result\\log.txt+" + outdir + "searcher_result\\log.txt+" + outdir + "capturer_result\\log.txt " + batdir + "all_result.txt 1>nul")
             modifybat(runbat, "call", "rem call")
-            file = batdir + "all_log.txt"
+            file = batdir + "all_result.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
     return HttpResponse(algversion)
-
-
-
