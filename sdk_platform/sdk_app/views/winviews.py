@@ -1,27 +1,51 @@
 import os
-import re, subprocess
+import re
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
-from threading import Thread
+from django.http import HttpResponse
 
 # Create your views here.
 batdir = "F:\\SDK\\Windows\\v2.1.2\\rc1\\"
+# batdir = "I:\\v2.1.2\\rc1\\"  #  home
 runbat = batdir + "run64.bat"
 outdir = batdir + "output\\"
 
 
+@login_required
 def sdk_manage(request):
     return render(request, "winsdk_manage.html")
 
 
-def upload(request):
+def upload1(request):
+    """
+    上传单个文件
+    :param request:
+    :return:
+    """
     if request.method == 'POST':
         file_obj = request.FILES.get('file')
+        print("file_obj.name: ", file_obj.name, file_obj)
         f = open(os.path.join('upload', file_obj.name), 'wb')
-        print(file_obj, type(file_obj))
         for chunk in file_obj.chunks():
             f.write(chunk)
         f.close()
+        return HttpResponse('OK')
+
+
+def upload(request):
+    """
+    上传多个文件
+    :param request:
+    :return:
+    """
+    if request.method == 'POST':
+        img_file = request.FILES.getlist("file")
+        for f in img_file:
+            destination = open(os.path.join('upload/' + f.name), 'wb')
+            for chunk in f.chunks():
+                destination.write(chunk)
+            destination.close()
+
         return HttpResponse('OK')
 
 
@@ -36,6 +60,7 @@ def modifybat(file, old_str, new_str):
     os.rename("%s.bak" % file, file)
 
 
+@login_required
 def sdk_test(request):
     if request.method == "POST":
         interface = request.POST.get("interface", "")

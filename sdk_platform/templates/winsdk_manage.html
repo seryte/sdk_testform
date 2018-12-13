@@ -44,13 +44,14 @@
             </div>
 
 
-
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1><span class="label label-primary">Windows平台</span></h1><br>
-                <div class="alert alert-success" id="prompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                <div class="alert alert-success" id="prompt" role="alert"
+                     style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Well done!</strong> 上传成功!
                 </div>
-                <div class="alert alert-danger" id="imgprompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                <div class="alert alert-danger" id="imgprompt" role="alert"
+                     style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Oh snap!</strong> 请上传测试图像!
                 </div>
                 <div class="input-group">
@@ -89,24 +90,32 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon">测试图像</span>
-                    <input type="file" class="form-control" id="file_upload">
+                                        <span class="input-group-addon">测试图像</span>
+                    {#                    <input type="file" class="form-control" id="file_upload">#}
+                    <form action="/manage/upload/" method="post" enctype="application/x-www-form-urlencoded">
+                        <input id="File1" class="form-control" name="fileupload" accept="image/png, image/jpeg" multiple="multiple" type="file" value=""/>
+{#                        <input id="file_upload" type="button" value="上传" onclick="FileUpload()"/>#}
+                    </form>
                 </div>
+                <p id="comparerId"
+                   style="color:#8B8989;font-size: 13px;margin-left: 20px;margin-top: 5px;display: none">
+                    说明：1比1测试时，请上传2张图片</p>
 
                 <br>
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
                         <i class="el-icon-loading" id="runing" style="display: none"></i> 运行测试
                     </button>
-                     <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
+                    <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"
+                            onclick="FileUpload()">
                         上传
                     </button>
                 </div>
-{#                加载样式#}
+                {#                加载样式#}
                 <div id="loading" class="spinner" style="display: none">
-                  <div class="bounce1"></div>
-                  <div class="bounce2"></div>
-                  <div class="bounce3"></div>
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
                 </div>
 
                 <div>
@@ -120,7 +129,6 @@
             </div>
 
 
-
         </div>
     </div>
     <script src="/static/js/jquery.min.js"></script>
@@ -130,7 +138,6 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
-
                 //点击完运行测试按钮，置灰按钮，不允许重复发送
                 $(this).attr('disabled', true);
                 $("#upload").attr('disabled', true);
@@ -167,31 +174,43 @@
             });
 
         });
-            //上传图像
-            function FileUpload() {
-                $("#prompt").hide();
-                if ($("#file_upload").val() === ""){
-                    $("#imgprompt").show();
-                    return false;
-                }
+
+        //上传图像
+        function FileUpload() {
+            $("#prompt").hide();
+            if ($("#File1").val() === "") {
+                $("#imgprompt").show();
+                return false;
+            }
             $("#imgprompt").hide();
             $("#loading").show();
             var form_data = new FormData();
-            var file_info =$('#file_upload')[0].files[0];
-            form_data.append('file',file_info);
+            var file_info = $('#File1')[0].files;
 
+            for (var i = 0; i < file_info.length; i++) {
+                form_data.append('file', file_info[i]);
+            }
+
+            console.log(form_data);
             $.ajax({
-                url:'/manage/upload/',
-                type:'POST',
+                url: '/manage/upload/',
+                type: 'POST',
                 data: form_data,
                 processData: false,
                 contentType: false,
-                success: function(callback) {
+                success: function (callback) {
                     console.log('ok');
-                     $("#loading").hide();
+                    $("#loading").hide();
                     $("#prompt").show();
                 }
             });
+        }
+
+        // 1比1测试时，提示
+        var obj_select = document.getElementById("interface");
+        var obj_div = document.getElementById("comparerId");
+        obj_select.onchange = function () {
+            obj_div.style.display = this.value == "comparer" ? "block" : "none";
         }
 
     </script>
