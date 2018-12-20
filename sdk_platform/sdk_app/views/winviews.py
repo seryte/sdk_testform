@@ -32,6 +32,7 @@ def upload1(request):
         return HttpResponse('OK')
 
 
+@login_required
 def upload(request):
     """
     上传多个文件
@@ -39,6 +40,7 @@ def upload(request):
     :return:
     """
     if request.method == 'POST':
+        os.system("del /f /s /q " + 'upload')  # 清空本地上传路径
         img_file = request.FILES.getlist("file")
         for f in img_file:
             destination = open(os.path.join('upload/' + f.name), 'wb')
@@ -46,7 +48,7 @@ def upload(request):
                 destination.write(chunk)
             destination.close()
 
-        return HttpResponse('OK')
+        return HttpResponse('success')
 
 
 # 工具-修改批处理文件
@@ -66,6 +68,7 @@ def sdk_test(request):
         interface = request.POST.get("interface", "")
         algversion = request.POST.get("algversion", "")
         sdkversion = request.POST.get("sdkversion", "")
+        testimg = request.POST.get("testimg", "")
 
         if interface == "detector":
             modifybat(runbat, "rem call DetectorTest.exe", "call DetectorTest.exe")
@@ -82,6 +85,10 @@ def sdk_test(request):
             with open(file, "r") as f:
                 return HttpResponse(f.read())
         elif interface == "comparer":
+            img = testimg.split(",")[-2]
+            basedir = batdir + "test\\benchmark\\comparer\\base\\"
+            os.system("del /f /s /q " + basedir)
+            os.system("move upload\\"+img + " " + basedir)
             modifybat(runbat, "rem call ComparerTest.exe", "call ComparerTest.exe")
             os.system(runbat)
             modifybat(runbat, "call ComparerTest.exe", "rem call ComparerTest.exe")

@@ -72,44 +72,40 @@
                 <div class="input-group">
                     <span class="input-group-addon">算法模型</span>
                     <select class="form-control" id="algversion">
-                        <option>0.10</option>
-                        <option>0.20</option>
-                        <option>0.30</option>
-                        <option>0.40</option>
-                        <option>0.50</option>
+                        <option selected="selected">gluon 2.3</option>
+                        <option>gluon 2.5</option>
+                        <option>gluon 2.7</option>
                     </select>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">SDK版本</span>
                     <select class="form-control" id="sdkversion">
                         <option>2.0</option>
-                        <option>2.1.2</option>
+                        <option selected="selected">2.1.2</option>
                         <option>2.1.5</option>
-                        <option>2.1.7</option>
-                        <option>2.1.9</option>
+                        <option>2.2.0</option>
                     </select>
                 </div>
                 <div class="input-group">
-                                        <span class="input-group-addon">测试图像</span>
-                    {#                    <input type="file" class="form-control" id="file_upload">#}
+                    <span class="input-group-addon">测试图像</span>
                     <form action="/manage/upload/" method="post" enctype="application/x-www-form-urlencoded">
-                        <input id="File1" class="form-control" name="fileupload" accept="image/png, image/jpeg" multiple="multiple" type="file" value=""/>
-{#                        <input id="file_upload" type="button" value="上传" onclick="FileUpload()"/>#}
+                        <input id="File1" class="form-control" name="fileupload" accept="image/png, image/jpeg"
+                               multiple="multiple" type="file" value=""/>
                     </form>
                 </div>
                 <p id="comparerId"
                    style="color:#8B8989;font-size: 13px;margin-left: 20px;margin-top: 5px;display: none">
-                    说明：1比1测试时，请上传2张图片</p>
+                    说明：1比1测试时，请同时上传2张图片</p>
 
                 <br>
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
                         <i class="el-icon-loading" id="runing" style="display: none"></i> 运行测试
                     </button>
-                    <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"
-                            onclick="FileUpload()">
-                        上传
-                    </button>
+                    {#                    <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"#}
+                    {#                            onclick="FileUpload()">#}
+                    {#                        上传#}
+                    {#                    </button>#}
                 </div>
                 {#                加载样式#}
                 <div id="loading" class="spinner" style="display: none">
@@ -138,52 +134,32 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
-                //点击完运行测试按钮，置灰按钮，不允许重复发送
-                $(this).attr('disabled', true);
-                $("#upload").attr('disabled', true);
-                $(this).attr('title', "请稍后，后台正在处理中");
-                $("#upload").attr('title', "请稍后，后台正在处理中");
-
-                $("#runing").show();
-                $("#imgprompt").hide();
-                $("#loading").show();
                 $("#prompt").hide();
-                $("#result").val('');
-                let sdk_interface = $('option[name="ifname"]:selected').val();
-                let algversion = $('#algversion').val();
-                let sdkversion = $("#sdkversion").val();
-
-                $.post("/manage/sdk_test/", {
-                    "interface": sdk_interface,
-                    "algversion": algversion,
-                    "sdkversion": sdkversion
-                }, function (resp) {
-                    $("#result").val(resp);
-                    $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
-                    $("#prompt").show();
-                    $("#loading").hide();
-                    $("#runing").hide();
-
-                    //运行结束启用上传和测试按钮
-                    $("#send").attr('disabled', false);
-                    $("#upload").attr('disabled', false);
-                    $("#send").removeAttr("title");
-                    $("#upload").removeAttr("title");
-                });
-
-            });
-
-        });
-
-        //上传图像
-        function FileUpload() {
-            $("#prompt").hide();
             if ($("#File1").val() === "") {
-                $("#imgprompt").show();
+                 $("#imgprompt").show();
                 return false;
             }
+            //点击完运行测试按钮，置灰按钮，不允许重复发送
+            $(this).attr('disabled', true);
+            $("#upload").attr('disabled', true);
+            $(this).attr('title', "请稍后，后台正在处理中");
+            $("#upload").attr('title', "请稍后，后台正在处理中");
+
+            $("#runing").show();
             $("#imgprompt").hide();
             $("#loading").show();
+            $("#prompt").hide();
+            $("#result").val('');
+            let sdk_interface = $('option[name="ifname"]:selected').val();
+            let algversion = $('#algversion').val();
+            let sdkversion = $("#sdkversion").val();
+
+            let allimg = document.getElementById("File1").files;
+            let testimg = "";
+            for (let i = 0; i < allimg.length; i++) {
+                testimg += allimg[i].name + ","
+            }
+
             var form_data = new FormData();
             var file_info = $('#File1')[0].files;
 
@@ -199,12 +175,31 @@
                 processData: false,
                 contentType: false,
                 success: function (callback) {
-                    console.log('ok');
-                    $("#loading").hide();
+                    if(callback=="success")
+                    {
+                    $.post("/manage/sdk_test/", {
+                    "interface": sdk_interface,
+                    "algversion": algversion,
+                    "sdkversion": sdkversion,
+                    "testimg": testimg,
+                }, function (resp) {
+                    $("#result").val(resp);
+                    $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
                     $("#prompt").show();
-                }
+                    $("#loading").hide();
+                    $("#runing").hide();
+
+                    //运行结束启用上传和测试按钮
+                    $("#send").attr('disabled', false);
+                    //$("#upload").attr('disabled', false);
+                    $("#send").removeAttr("title");
+                    //$("#upload").removeAttr("title");
+                });
+                        }
+                    }
+                });
             });
-        }
+        });
 
         // 1比1测试时，提示
         var obj_select = document.getElementById("interface");

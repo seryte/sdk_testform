@@ -1,4 +1,5 @@
 import os
+import time
 import paramiko
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -23,6 +24,7 @@ def linsdk_test(request):
         interface = request.POST.get("interface", "")
         algversion = request.POST.get("algversion", "")
         sdkversion = request.POST.get("sdkversion", "")
+        testimg = request.POST.get("testimg", "")
 
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -53,6 +55,10 @@ def linsdk_test(request):
             return HttpResponse(result)
 
         elif interface == "comparer":
+            img = testimg.split(",")[-2]
+            basedir = sdkdir + "test/benchmark/comparer/base"
+            ssh.exec_command("rm -rf " + basedir + "/*")
+            ssh.exec_command("mv " + sdkdir + "tpcase/" + img + " " + basedir)
             ssh.exec_command(
                 "sed -i 's/^#${comparer}/${comparer}/' " + sdkdir + "run.sh")
             stdin, stdout, stderr = ssh.exec_command("cd " + sdkdir + " && ./run.sh")
@@ -131,17 +137,23 @@ def linsdk_test(request):
 
 def linupload(request):
     if request.method == 'POST':
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(server, port, username, password, timeout=5)
+
         # 先上传到本地，再上传到服务器
-        file_obj = request.FILES.get('file')
-        f = open(os.path.join('linupload', file_obj.name), 'wb')
-        print(file_obj, type(file_obj))
-        for chunk in file_obj.chunks():
-            f.write(chunk)
-        f.close()
+        os.system("del /f /s /q " + 'linupload')  # 清空本地上传路径
+        ssh.exec_command("rm -rf " + sdkdir + "tpcase/*")  # 清空远程上传路径
+        img_file = request.FILES.getlist("file")
+        for f in img_file:
+            destination = open(os.path.join('linupload/' + f.name), 'wb')
+            for chunk in f.chunks():
+                destination.write(chunk)
+            destination.close()
 
         t = paramiko.Transport((server, port))
         t.connect(username=username, password=password)
         sftp = paramiko.SFTPClient.from_transport(t)
         for i in os.listdir("linupload"):
             sftp.put(os.path.join("linupload", i), os.path.join(sdkdir + "tpcase/", i))
-        return HttpResponse('OK')
+        return HttpResponse('success')

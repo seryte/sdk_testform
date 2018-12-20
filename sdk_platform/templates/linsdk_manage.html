@@ -44,13 +44,14 @@
             </div>
 
 
-
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1><span class="label label-primary">Linux平台</span></h1><br>
-                <div class="alert alert-success" id="prompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                <div class="alert alert-success" id="prompt" role="alert"
+                     style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Well done!</strong> 上传成功!
                 </div>
-                <div class="alert alert-danger" id="imgprompt" role="alert" style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
+                <div class="alert alert-danger" id="imgprompt" role="alert"
+                     style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Oh snap!</strong> 请上传测试图像!
                 </div>
                 <div class="input-group">
@@ -71,42 +72,41 @@
                 <div class="input-group">
                     <span class="input-group-addon">算法模型</span>
                     <select class="form-control" id="algversion">
-                        <option>0.10</option>
-                        <option>0.20</option>
-                        <option>0.30</option>
-                        <option>0.40</option>
-                        <option>0.50</option>
+                        <option selected="selected">gluon 2.3</option>
+                        <option>gluon 2.5</option>
+                        <option>gluon 2.7</option>
                     </select>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">SDK版本</span>
                     <select class="form-control" id="sdkversion">
                         <option>2.0</option>
-                        <option>2.1.2</option>
+                        <option selected="selected">2.1.2</option>
                         <option>2.1.5</option>
-                        <option>2.1.7</option>
-                        <option>2.1.9</option>
+                        <option>2.2.0</option>
                     </select>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">测试图像</span>
-                    <input type="file" class="form-control" id="file_upload">
+                    <form action="/manage/upload/" method="post" enctype="application/x-www-form-urlencoded">
+                        <input id="File1" class="form-control" name="fileupload" accept="image/png, image/jpeg"
+                               multiple="multiple" type="file" value=""/>
+                    </form>
                 </div>
-
+                <p id="comparerId"
+                   style="color:#8B8989;font-size: 13px;margin-left: 20px;margin-top: 5px;display: none">
+                    说明：1比1测试时，请同时上传2张图片</p>
                 <br>
                 <div style="width: 100%; height: 60px;">
                     <button type="button" class="btn btn-success" id="send" style="float: right;margin-right: 10px;">
                         <i class="el-icon-loading" id="runing" style="display: none"></i> 运行测试
                     </button>
-                     <button type="button" class="btn btn-success" id="upload" style="float: right;margin-right: 10px;"onclick="FileUpload()">
-                        上传
-                    </button>
                 </div>
-{#                加载样式#}
+                {#                加载样式#}
                 <div id="loading" class="spinner" style="display: none">
-                  <div class="bounce1"></div>
-                  <div class="bounce2"></div>
-                  <div class="bounce3"></div>
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
                 </div>
 
                 <div>
@@ -120,7 +120,6 @@
             </div>
 
 
-
         </div>
     </div>
     <script src="/static/js/jquery.min.js"></script>
@@ -130,13 +129,14 @@
         });
         $(document).ready(function () {
             $("#send").click(function () {
-
+                $("#prompt").hide();
+                if ($("#File1").val() === "") {
+                    $("#imgprompt").show();
+                    return false;
+                }
                 //点击完运行测试按钮，置灰按钮，不允许重复发送
                 $(this).attr('disabled', true);
-                $("#upload").attr('disabled', true);
                 $(this).attr('title', "请稍后，后台正在处理中");
-                $("#upload").attr('title', "请稍后，后台正在处理中");
-
                 $("#runing").show();
                 $("#imgprompt").hide();
                 $("#loading").show();
@@ -146,52 +146,78 @@
                 let algversion = $('#algversion').val();
                 let sdkversion = $("#sdkversion").val();
 
-                $.post("/manage/linsdk_test/", {
-                    "interface": sdk_interface,
-                    "algversion": algversion,
-                    "sdkversion": sdkversion
-                }, function (resp) {
-                    $("#result").val(resp);
-                    $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
-                    $("#prompt").show();
-                    $("#loading").hide();
-                    $("#runing").hide();
-
-                    //运行结束启用上传和测试按钮
-                    $("#send").attr('disabled', false);
-                    $("#upload").attr('disabled', false);
-                    $("#send").removeAttr("title");
-                    $("#upload").removeAttr("title");
-                });
-
-            });
-
-        });
-            //上传图像
-            function FileUpload() {
-                $("#prompt").hide();
-                if ($("#file_upload").val() === ""){
-                    $("#imgprompt").show();
-                    return false;
+                let allimg = document.getElementById("File1").files;
+                let testimg = "";
+                for (let i = 0; i < allimg.length; i++) {
+                    testimg += allimg[i].name + ","
                 }
-            $("#imgprompt").hide();
-            $("#loading").show();
-            var form_data = new FormData();
-            var file_info =$('#file_upload')[0].files[0];
-            form_data.append('file',file_info);
 
+                var form_data = new FormData();
+                var file_info = $('#File1')[0].files;
+
+                for (var i = 0; i < file_info.length; i++) {
+                    form_data.append('file', file_info[i]);
+                }
+                $.ajax({
+                    url: '/manage/linupload/',
+                    type: 'POST',
+                    data: form_data,
+                    processData: false,
+                    contentType: false,
+                    success: function (callback) {
+                        if(callback == "success") {
+                        $.post("/manage/linsdk_test/", {
+                            "interface": sdk_interface,
+                            "algversion": algversion,
+                            "sdkversion": sdkversion,
+                            "testimg": testimg,
+                        }, function (resp) {
+                            $("#result").val(resp);
+                            $("#prompt").html("<strong>Well done!</strong> 测试成功，请在返回结果栏查看！");
+                            $("#prompt").show();
+                            $("#loading").hide();
+                            $("#runing").hide();
+
+                            //运行结束启用上传和测试按钮
+                            $("#send").attr('disabled', false);
+                            $("#upload").attr('disabled', false);
+                            $("#send").removeAttr("title");
+                            $("#upload").removeAttr("title");
+                        });
+                    }
+                    }
+                });
+            });
+        });
+
+        //上传图像
+        /*function FileUpload() {
+            var form_data = new FormData();
+            var file_info = $('#File1')[0].files;
+
+            for (var i = 0; i < file_info.length; i++) {
+                form_data.append('file', file_info[i]);
+            }
             $.ajax({
-                url:'/manage/linupload/',
-                type:'POST',
+                url: '/manage/linupload/',
+                type: 'POST',
                 data: form_data,
                 processData: false,
                 contentType: false,
-                success: function(callback) {
-                    console.log('ok');
-                     $("#loading").hide();
-                    $("#prompt").show();
+                success: function (callback) {
+                    if(callback == "success") {
+                    alert(callback)
+                }
                 }
             });
+
+        }*/
+
+        // 1比1测试时，提示
+        var obj_select = document.getElementById("interface");
+        var obj_div = document.getElementById("comparerId");
+        obj_select.onchange = function () {
+            obj_div.style.display = this.value == "comparer" ? "block" : "none";
         }
 
     </script>
