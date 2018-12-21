@@ -77,6 +77,7 @@ def sdk_test(request):
             file = batdir + "output\\detector_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "extractor":
             modifybat(runbat, "rem call ExtractorTest.exe", "call ExtractorTest.exe")
             os.system(runbat)
@@ -84,17 +85,21 @@ def sdk_test(request):
             file = batdir + "output\\extractor_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "comparer":
-            img = testimg.split(",")[-2]
+            imgfile = testimg.split(",")[-2]
+            if " " in imgfile:
+                os.rename(os.path.join("upload\\", imgfile), os.path.join("upload\\", imgfile.replace(" ", "")))
             basedir = batdir + "test\\benchmark\\comparer\\base\\"
             os.system("del /f /s /q " + basedir)
-            os.system("move upload\\"+img + " " + basedir)
+            os.system("move upload\\" + imgfile.replace(" ", "") + " " + basedir)
             modifybat(runbat, "rem call ComparerTest.exe", "call ComparerTest.exe")
             os.system(runbat)
             modifybat(runbat, "call ComparerTest.exe", "rem call ComparerTest.exe")
             file = batdir + "output\\comparer_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "searcher":
             modifybat(runbat, "rem call SearcherTest.exe", "call SearcherTest.exe")
             os.system(runbat)
@@ -102,6 +107,7 @@ def sdk_test(request):
             file = batdir + "output\\searcher_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "predictor":
             modifybat(runbat, "rem call PredictorTest.exe", "call PredictorTest.exe")
             os.system(runbat)
@@ -109,6 +115,7 @@ def sdk_test(request):
             file = batdir + "output\\predictor_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "capturer":
             modifybat(runbat, "rem call CapturerTest.exe", "call CapturerTest.exe")
             os.system(runbat)
@@ -123,6 +130,7 @@ def sdk_test(request):
             file = batdir + "output\\tracker_result\\log.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
         elif interface == "select_all":
             modifybat(runbat, "rem call", "call")
             os.system(runbat)
@@ -132,4 +140,5 @@ def sdk_test(request):
             file = batdir + "all_result.txt"
             with open(file, "r") as f:
                 return HttpResponse(f.read())
+
     return HttpResponse(algversion)
