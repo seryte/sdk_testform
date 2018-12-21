@@ -30,22 +30,22 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="#">Windows平台</a></li>
-                    <li><a href="/manage/linsdk_manage/">Linux平台</a></li>
+                    <li class="active" ><a class="fab fa-windows" href="#">Windows平台</a></li>
+                    <li><a class="fab fa-linux" href="/manage/linsdk_manage/">Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="#">Arm-android平台</a></li>
-                    <li><a href="#">Arm-Linux平台</a></li>
+                    <li><a class="fab fa-android" href="#">Arm-android平台</a></li>
+                    <li><a class="fab fa-ubuntu" href="#">Arm-Linux平台</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Arm-ios平台</a></li>
-                    <li><a href="">测试工具</a></li>
+                    <li><a class="fab fa-apple" href="">Arm-ios平台</a></li>
+                    <li><a class="fas fa-tools" href="">测试工具</a></li>
                 </ul>
             </div>
 
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1><span class="label label-primary">Windows平台</span></h1><br>
+                <h2><span class="fab fa-windows">Windows平台</span></h2><br>
                 <div class="alert alert-success" id="prompt" role="alert"
                      style="width: 332px;padding-left: 15px;display: none;margin-left: 400px;">
                     <strong>Well done!</strong> 上传成功!
@@ -193,6 +193,7 @@
                     $("#send").attr('disabled', false);
                     //$("#upload").attr('disabled', false);
                     $("#send").removeAttr("title");
+                    document.getElementById("File1").value = ''
                     //$("#upload").removeAttr("title");
                 });
                         }

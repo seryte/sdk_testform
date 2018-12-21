@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <body>
+  <body class="bg">
 
     <div class="container">
       <form class="form-signin" method="post" action="/login_action/">
-        <h2 class="form-signin-heading">SDK 测试平台</h2>
+        <h2 class="form-signin-heading login-title">SDK 测试平台</h2>
         <label for="inputUsername" class="sr-only">Username</label>
           <input name="username" type="text" id="inputUsername" class="form-control" placeholder="Username">
         <label for="inputPassword" class="sr-only">Password</label>
@@ -20,4 +20,15 @@
 
   </body>
 
+    <style>
+  .bg {
+      background:url(/static/image/index.jpg) no-repeat center fixed;
+      height: 600px;
+  }
+  .login-title {
+    text-align: center;
+    {#font-family: "Times New Roman", Times, serif;#}
+    color: white;
+  }
+  </style>
 {% endblock %}
