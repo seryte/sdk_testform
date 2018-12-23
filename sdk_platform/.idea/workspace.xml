@@ -29,8 +29,8 @@
       <file leaf-file-name="winsdk_manage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/winsdk_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/sdk_app/views/linviews.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1125">
-              <caret line="110" column="75" lean-forward="true" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
+              <caret line="110" column="75" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,8 +71,8 @@
       <file leaf-file-name="linsdk_manage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="216">
+              <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -139,7 +139,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -259,8 +259,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -624,7 +623,7 @@
     <entry file="file://$PROJECT_DIR$/sdk_app/views/linviews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
-          <caret line="110" column="75" lean-forward="true" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
+          <caret line="110" column="75" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -648,16 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sdk_app/views/winviews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -668,10 +657,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/linsdk_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/winsdk_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
         </state>
       </provider>
     </entry>
