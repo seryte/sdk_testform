@@ -70,6 +70,11 @@ def sdk_test(request):
         sdkversion = request.POST.get("sdkversion", "")
         testimg = request.POST.get("testimg", "")
 
+        if algversion == "gluon2.3":
+            os.system("copy/y " + batdir + "model\\models\\gluon2.3\\config " + batdir + "model\\")
+        if algversion == "gluon2.5":
+            os.system("copy/y " + batdir + "model\\models\\gluon2.5\\config " + batdir + "model\\")
+
         if interface == "detector":
             modifybat(runbat, "rem call DetectorTest.exe", "call DetectorTest.exe")
             os.system(runbat)
