@@ -30,6 +30,13 @@ def linsdk_test(request):
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(server, port, username, password, timeout=5)
 
+        if algversion == "gluon1.9":
+            ssh.exec_command("cp " + sdkdir + "model/models/gluon1.9/config " + sdkdir + "model/")
+        if algversion == "gluon2.3":
+            ssh.exec_command("cp " + sdkdir + "model/models/gluon2.3/config " + sdkdir + "model/")
+        if algversion == "gluon2.5":
+            ssh.exec_command("cp " + sdkdir + "model/models/gluon2.5/config " + sdkdir + "model/")
+
         if interface == "detector":
             ssh.exec_command(
                 "sed -i 's/^#${detector}/${detector}/' " + sdkdir + "run.sh")
