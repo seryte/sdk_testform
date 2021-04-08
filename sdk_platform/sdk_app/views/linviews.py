@@ -5,12 +5,12 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 
-sdkdir = "/home/intellif/SDK/IFaceRecSDK/v2.1.0/rc1/"
+sdkdir = "/home/product/SDK/v2.1.0/rc1/"
 outdir = sdkdir + "output/"
 server = "192.168.11.25"
 port = 22
-username = "intellif"
-password = "introcksai"
+username = "root"
+password = "root1234"
 
 
 @login_required
